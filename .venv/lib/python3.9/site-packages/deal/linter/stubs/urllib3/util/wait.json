@@ -1,0 +1,44 @@
+{
+  "null_wait_for_socket": {
+    "raises": [
+      "NoWayToWaitForSocketError"
+    ]
+  },
+  "poll_wait_for_socket": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "select_wait_for_socket": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "wait_for_read": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "NoWayToWaitForSocketError",
+      "RuntimeError"
+    ]
+  },
+  "wait_for_socket": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "NoWayToWaitForSocketError",
+      "RuntimeError"
+    ]
+  },
+  "wait_for_write": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "NoWayToWaitForSocketError",
+      "RuntimeError"
+    ]
+  }
+}

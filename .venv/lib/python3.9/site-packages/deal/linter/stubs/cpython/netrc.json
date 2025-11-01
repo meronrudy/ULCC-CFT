@@ -1,0 +1,11 @@
+{
+  "netrc.__init__": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

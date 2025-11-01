@@ -1,0 +1,12 @@
+{
+  "__get_builtin_constructor": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "__get_openssl_constructor": {
+    "raises": [
+      "ValueError"
+    ]
+  }
+}

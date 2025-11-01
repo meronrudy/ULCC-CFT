@@ -1,0 +1,48 @@
+name: E4 Morphogenesis CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  morphogenesis-sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ensure symlinks for imports (ulcc-core/ddg/pggs-toy)
+        run: |
+          if [ ! -L ulcc_core ]; then ln -s ulcc-core ulcc_core; fi
+          if [ ! -L ulcc_ddg ]; then ln -s ulcc-ddg ulcc_ddg; fi
+          if [ ! -L ulcc_pggs ]; then ln -s pggs-toy ulcc_pggs; fi
+
+      - name: Run fast tests (control + benchmark smoke)
+        run: |
+          python -m pytest -q tests/control/test_control_integration.py
+          python -m pytest -q tests/benchmarks/test_e4_bench.py
+
+      - name: Run tiny morphogenesis sweep (grids=[4], iterations=5)
+        run: |
+          python -m harness.e4_morphogenesis_bench --grids 4 --iterations 5 --fp-cycles 200 --period-us 1000000 --out harness/reports/ci_e4_morphogenesis_report.md
+          echo "Sweep done."
+          ls -la harness/reports || true
+
+      - name: Upload morphogenesis report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: morphogenesis-report
+          path: |
+            harness/reports/ci_e4_morphogenesis_report.md

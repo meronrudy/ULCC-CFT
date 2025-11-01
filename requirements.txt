@@ -1,0 +1,11 @@
+numpy>=1.24
+scipy>=1.11
+pytest>=7.4
+sympy>=1.12
+deal>=4.23
+networkx>=3
+jupyter>=1
+nbformat>=5.9
+nbclient>=0.10
+ipykernel>=6.0
+matplotlib>=3.6

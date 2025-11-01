@@ -1,0 +1,53 @@
+{
+  "_do_cmp": {
+    "has": [
+      "read"
+    ]
+  },
+  "cmp": {
+    "has": [
+      "read"
+    ]
+  },
+  "cmpfiles": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "demo": {
+    "has": [
+      "import",
+      "stdout"
+    ]
+  },
+  "dircmp.__getattr__": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "dircmp.phase2": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "dircmp.phase4": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "dircmp.report": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "dircmp.report_full_closure": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "dircmp.report_partial_closure": {
+    "has": [
+      "stdout"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "Telnet.__del__": {
+    "has": [
+      "network"
+    ]
+  },
+  "Telnet.__exit__": {
+    "has": [
+      "network"
+    ]
+  },
+  "Telnet.close": {
+    "has": [
+      "network"
+    ]
+  },
+  "Telnet.expect": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "EOFError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Telnet.fill_rawq": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "Telnet.interact": {
+    "has": [
+      "import"
+    ]
+  },
+  "Telnet.msg": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "Telnet.mt_interact": {
+    "has": [
+      "import"
+    ]
+  },
+  "Telnet.open": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "err"
+    ]
+  },
+  "Telnet.rawq_getchar": {
+    "raises": [
+      "EOFError"
+    ]
+  },
+  "Telnet.read_very_lazy": {
+    "raises": [
+      "EOFError"
+    ]
+  },
+  "Telnet.write": {
+    "has": [
+      "stdout"
+    ]
+  }
+}

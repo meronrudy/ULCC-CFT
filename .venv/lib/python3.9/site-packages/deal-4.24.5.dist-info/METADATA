@@ -1,0 +1,144 @@
+Metadata-Version: 2.1
+Name: deal
+Version: 4.24.5
+Summary: **Deal** is a Python library for [design by contract][wiki] (DbC) programming.
+Keywords: deal,contracts,pre,post,invariant,decorators,validation,pythonic,functional
+Author-email: Gram <gram@orsinium.dev>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: astroid>=2.11.0 ; extra == "all"
+Requires-Dist: deal-solver>=0.1.2 ; extra == "all"
+Requires-Dist: hypothesis ; extra == "all"
+Requires-Dist: pygments ; extra == "all"
+Requires-Dist: typeguard>=3.0.0 ; extra == "all"
+Requires-Dist: vaa>=0.2.1 ; extra == "all"
+Requires-Dist: m2r2>=0.3.3.post2 ; extra == "docs"
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: sphinx==7.* ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==2.* ; extra == "docs"
+Requires-Dist: astroid>=2.11.0 ; extra == "integration"
+Requires-Dist: deal-solver>=0.1.2 ; extra == "integration"
+Requires-Dist: hypothesis ; extra == "integration"
+Requires-Dist: pygments ; extra == "integration"
+Requires-Dist: typeguard<4.0.0 ; extra == "integration"
+Requires-Dist: vaa>=0.2.1 ; extra == "integration"
+Requires-Dist: sphinx>=4.5.0 ; extra == "integration"
+Requires-Dist: flake8 ; extra == "integration"
+Requires-Dist: marshmallow ; extra == "integration"
+Requires-Dist: flake8 ; extra == "lint"
+Requires-Dist: flake8-commas ; extra == "lint"
+Requires-Dist: flake8-quotes ; extra == "lint"
+Requires-Dist: mypy>=0.900 ; extra == "lint"
+Requires-Dist: mypy_test>=0.1.1 ; extra == "lint"
+Requires-Dist: isort ; extra == "lint"
+Requires-Dist: unify ; extra == "lint"
+Requires-Dist: deal-solver>=0.1.2 ; extra == "lint"
+Requires-Dist: hypothesis ; extra == "lint"
+Requires-Dist: pygments ; extra == "lint"
+Requires-Dist: typeguard<4.0.0 ; extra == "lint"
+Requires-Dist: coverage[toml] ; extra == "test"
+Requires-Dist: coverage-conditional-plugin ; extra == "test"
+Requires-Dist: docstring-parser ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: urllib3 ; extra == "test"
+Project-URL: Documentation, https://deal.readthedocs.io/
+Project-URL: Repository, https://github.com/life4/deal
+Provides-Extra: all
+Provides-Extra: docs
+Provides-Extra: integration
+Provides-Extra: lint
+Provides-Extra: test
+
+# ![Deal](https://raw.githubusercontent.com/life4/deal/master/logo.png)
+
+[![Build Status](https://cloud.drone.io/api/badges/life4/deal/status.svg)](https://cloud.drone.io/life4/deal)
+[![PyPI version](https://img.shields.io/pypi/v/deal.svg)](https://pypi.python.org/pypi/deal)
+[![Development Status](https://img.shields.io/pypi/status/deal.svg)](https://pypi.python.org/pypi/deal)
+
+A Python library for [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) (DbC) and checking values, exceptions, and side-effects. In a nutshell, deal empowers you to write bug-free code. By adding a few decorators to your code, you get for free tests, static analysis, formal verification, and much more. Read [intro](https://deal.readthedocs.io/basic/intro.html) to get started.
+
+## Features
+
+* [Classic DbC: precondition, postcondition, invariant.][values]
+* [Tracking exceptions and side-effects.][exceptions]
+* [Property-based testing.][tests]
+* [Static checker.][linter]
+* Integration with pytest, flake8, sphinx, and hypothesis.
+* Type annotations support.
+* [External validators support.][validators]
+* [Contracts for importing modules.][module_load]
+* [Can be enabled or disabled on production.][runtime]
+* [Colorless][colorless]: annotate only what you want. Hence, easy integration into an existing project.
+* Colorful: syntax highlighting for every piece of code in every command.
+* [Memory leaks detection][leaks]: deal makes sure that pure functions don't leave unexpected objects in the memory.
+* DRY: test discovery, error messages generation.
+* Partial execution: linter executes contracts to statically check possible values.
+* [Formal verification][verification]: prove that your code works for all input (or find out when it doesn't).
+* Zero-dependency runtime: there are some dependencies for analysis tools, but nothing of it is required on the production.
+* Fast: each code change is benchmarked and profiled.
+* Reliable: the library has 100% test coverage, partially verified, and runs on production by multiple companies since 2018.
+
+[values]: https://deal.readthedocs.io/basic/values.html
+[exceptions]: https://deal.readthedocs.io/basic/exceptions.html
+[tests]: https://deal.readthedocs.io/basic/tests.html
+[linter]: https://deal.readthedocs.io/basic/linter.html
+[validators]: https://deal.readthedocs.io/details/contracts.html#external-validators
+[module_load]: https://deal.readthedocs.io/details/module_load.html
+[runtime]: https://deal.readthedocs.io/basic/runtime.html
+[colorless]: http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/
+[leaks]: https://deal.readthedocs.io/basic/tests.html#memory-leaks
+[verification]: https://deal.readthedocs.io/basic/verification.html
+
+## Deal in 30 seconds
+
+```python
+# the result is always non-negative
+@deal.post(lambda result: result >= 0)
+# the function has no side-effects
+@deal.pure
+def count(items: List[str], item: str) -> int:
+    return items.count(item)
+
+# generate test function
+test_count = deal.cases(count)
+```
+
+Now we can:
+
+* Run `python3 -m deal lint` or `flake8` to statically check errors.
+* Run `python3 -m deal test` or `pytest` to generate and run tests.
+* Just use the function in the project and check errors in runtime.
+
+Read more in the [documentation](https://deal.readthedocs.io/).
+
+## Installation
+
+```bash
+python3 -m pip install --user 'deal[all]'
+```
+
+## Contributing
+
+Contributions are welcome! A few ideas what you can contribute:
+
+* Add new checks for the linter.
+* Improve documentation.
+* Add more tests.
+* Improve performance.
+* Found a bug? Fix it!
+* Made an article about deal? Great! Let's add it into the `README.md`.
+* Don't have time to code? No worries! Just tell your friends and subscribers about the project. More users -> more contributors -> more cool features.
+
+To run tests locally, all you need is [task](http://taskfile.dev/). Run `task all` to run all code formatters, linters, and tests.
+
+Thank you :heart:
+

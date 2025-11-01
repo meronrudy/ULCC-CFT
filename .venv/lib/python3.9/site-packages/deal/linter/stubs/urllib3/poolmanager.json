@@ -1,0 +1,23 @@
+{
+  "PoolManager.connection_from_host": {
+    "raises": [
+      "LocationValueError"
+    ]
+  },
+  "ProxyManager.__init__": {
+    "raises": [
+      "ProxySchemeUnknown"
+    ]
+  },
+  "ProxyManager._validate_proxy_scheme_url_selection": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "ProxySchemeUnsupported",
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "Differ._fancy_replace": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Differ._plain_replace": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "Differ.compare": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "HtmlDiff.make_table": {
+    "has": [
+      "import"
+    ]
+  },
+  "_check_types": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_mdiff": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_test": {
+    "has": [
+      "global",
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "context_diff": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "diff_bytes": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "get_close_matches": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "restore": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "unified_diff": {
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

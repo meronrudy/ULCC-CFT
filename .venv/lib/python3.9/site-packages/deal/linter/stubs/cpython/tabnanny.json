@@ -1,0 +1,29 @@
+{
+  "check": {
+    "has": [
+      "stderr",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "errprint": {
+    "has": [
+      "stderr"
+    ]
+  },
+  "main": {
+    "has": [
+      "global",
+      "import",
+      "stderr",
+      "stdout"
+    ]
+  },
+  "process_tokens": {
+    "raises": [
+      "NannyNag"
+    ]
+  }
+}

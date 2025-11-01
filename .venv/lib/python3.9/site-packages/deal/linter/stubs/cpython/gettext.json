@@ -1,0 +1,209 @@
+{
+  "GNUTranslations._parse": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "OSError",
+      "ValueError"
+    ]
+  },
+  "GNUTranslations.lgettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "GNUTranslations.lngettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "NullTranslations.install": {
+    "has": [
+      "import"
+    ]
+  },
+  "NullTranslations.lgettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "NullTranslations.lngettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "NullTranslations.output_charset": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "NullTranslations.set_output_charset": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_as_int": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_expand_lang": {
+    "has": [
+      "import"
+    ]
+  },
+  "_parse": {
+    "raises": [
+      "ValueError",
+      "_error"
+    ]
+  },
+  "_tokenize": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "bind_textdomain_codeset": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "bindtextdomain": {
+    "has": [
+      "global"
+    ]
+  },
+  "c2py": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "find": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "install": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "FileNotFoundError"
+    ]
+  },
+  "ldgettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "ldngettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "lgettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "lngettext": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "textdomain": {
+    "has": [
+      "global"
+    ]
+  },
+  "translation": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "AssertionError",
+      "Error",
+      "FileNotFoundError",
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  }
+}

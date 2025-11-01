@@ -1,0 +1,146 @@
+{
+  "FieldStorage.__bool__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "FieldStorage.__contains__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "FieldStorage.__getattr__": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "FieldStorage.__getitem__": {
+    "raises": [
+      "KeyError",
+      "TypeError"
+    ]
+  },
+  "FieldStorage.__init__": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "FieldStorage.keys": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "FieldStorage.make_file": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "FileExistsError"
+    ]
+  },
+  "FieldStorage.read_multi": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "FieldStorage.read_urlencoded": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "closelog": {
+    "has": [
+      "global"
+    ]
+  },
+  "escape": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "initlog": {
+    "has": [
+      "global"
+    ]
+  },
+  "parse": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "parse_qs": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "parse_qsl": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "print_arguments": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "print_directory": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "print_environ": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "print_environ_usage": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "print_exception": {
+    "has": [
+      "import",
+      "stdout"
+    ]
+  },
+  "print_form": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "test": {
+    "has": [
+      "global",
+      "import",
+      "stdout"
+    ]
+  },
+  "valid_boundary": {
+    "has": [
+      "import"
+    ]
+  }
+}

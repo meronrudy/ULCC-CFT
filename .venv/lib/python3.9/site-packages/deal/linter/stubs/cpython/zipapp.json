@@ -1,0 +1,25 @@
+{
+  "_maybe_open": {
+    "has": [
+      "read"
+    ]
+  },
+  "create_archive": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "ZipAppError"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "SystemExit",
+      "ZipAppError"
+    ]
+  }
+}

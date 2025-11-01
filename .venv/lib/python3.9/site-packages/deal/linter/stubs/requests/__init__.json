@@ -1,0 +1,17 @@
+{
+  "_check_cryptography": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "check_compatibility": {
+    "raises": [
+      "AssertionError"
+    ]
+  }
+}

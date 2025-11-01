@@ -1,0 +1,137 @@
+{
+  "Path.__new__": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "Path._raise_closed": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Path.glob": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "NotImplementedError",
+      "ValueError"
+    ]
+  },
+  "Path.group": {
+    "has": [
+      "import"
+    ]
+  },
+  "Path.link_to": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "Path.owner": {
+    "has": [
+      "import"
+    ]
+  },
+  "Path.rglob": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "NotImplementedError",
+      "ValueError"
+    ]
+  },
+  "Path.write_text": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "PurePath._parse_args": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "PurePath.as_uri": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "PurePath.match": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "PurePath.relative_to": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "PurePath.with_name": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "PurePath.with_suffix": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "WindowsPath.group": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "WindowsPath.is_mount": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "WindowsPath.owner": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "_NormalAccessor.group": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "_NormalAccessor.owner": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "_PathParents.__getitem__": {
+    "raises": [
+      "IndexError"
+    ]
+  },
+  "_PosixFlavour.gethomedir": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_Selector.__init__": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_WindowsFlavour.gethomedir": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_make_selector": {
+    "raises": [
+      "ValueError"
+    ]
+  }
+}

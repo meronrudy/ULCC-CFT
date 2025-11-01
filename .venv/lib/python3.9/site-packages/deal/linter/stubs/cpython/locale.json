@@ -1,0 +1,77 @@
+{
+  "_build_localename": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_grouping_intervals": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_parse_localename": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_print_locale": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_test": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "Error"
+    ]
+  },
+  "currency": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "format": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "getdefaultlocale": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "getlocale": {
+    "raises": [
+      "Error",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "resetlocale": {
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  "setlocale": {
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  }
+}

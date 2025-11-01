@@ -1,0 +1,33 @@
+{
+  "_glob1": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_glob2": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_iglob": {
+    "raises": [
+      "AssertionError",
+      "TypeError"
+    ]
+  },
+  "escape": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "glob": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "iglob": {
+    "raises": [
+      "AssertionError"
+    ]
+  }
+}

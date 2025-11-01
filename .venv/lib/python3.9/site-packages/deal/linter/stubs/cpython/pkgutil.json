@@ -1,0 +1,135 @@
+{
+  "ImpImporter.__init__": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "ImpImporter.iter_modules": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "ImpLoader.__init__": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "ImpLoader._fix_name": {
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "ImpLoader._reopen": {
+    "has": [
+      "read"
+    ]
+  },
+  "ImpLoader.get_code": {
+    "has": [
+      "read"
+    ]
+  },
+  "ImpLoader.get_data": {
+    "has": [
+      "read"
+    ]
+  },
+  "ImpLoader.get_source": {
+    "has": [
+      "read"
+    ]
+  },
+  "ImpLoader.load_module": {
+    "has": [
+      "read"
+    ]
+  },
+  "_get_spec": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "_import_imp": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError"
+    ]
+  },
+  "_iter_file_finder_modules": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "extend_path": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "find_loader": {
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "get_data": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "ModuleNotFoundError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "get_loader": {
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "iter_importers": {
+    "raises": [
+      "ImportError",
+      "TypeError"
+    ]
+  },
+  "iter_modules": {
+    "raises": [
+      "ImportError",
+      "ValueError"
+    ]
+  },
+  "read_code": {
+    "has": [
+      "import"
+    ]
+  },
+  "resolve_name": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  }
+}

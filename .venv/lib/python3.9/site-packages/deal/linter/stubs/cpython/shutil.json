@@ -1,0 +1,162 @@
+{
+  "_basename": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_check_unpack_options": {
+    "raises": [
+      "RegistryError",
+      "TypeError"
+    ]
+  },
+  "_copytree": {
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  "_destinsrc": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_ensure_directory": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_fastcopy_fcopyfile": {
+    "raises": [
+      "_GiveupOnFastCopy",
+      "err"
+    ]
+  },
+  "_fastcopy_sendfile": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "_GiveupOnFastCopy"
+    ]
+  },
+  "_make_tarball": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_make_zipfile": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_rmtree_safe_fd": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_unpack_tarfile": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "ReadError"
+    ]
+  },
+  "_unpack_zipfile": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "ReadError"
+    ]
+  },
+  "chown": {
+    "raises": [
+      "LookupError",
+      "ValueError"
+    ]
+  },
+  "copy": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "FileNotFoundError",
+      "SameFileError",
+      "SpecialFileError",
+      "TypeError"
+    ]
+  },
+  "copy2": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "FileNotFoundError",
+      "SameFileError",
+      "SpecialFileError",
+      "TypeError"
+    ]
+  },
+  "copyfile": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "FileNotFoundError",
+      "SameFileError",
+      "SpecialFileError"
+    ]
+  },
+  "copytree": {
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  "make_archive": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "move": {
+    "raises": [
+      "Error",
+      "PermissionError",
+      "TypeError"
+    ]
+  },
+  "register_archive_format": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "register_unpack_format": {
+    "raises": [
+      "RegistryError",
+      "TypeError"
+    ]
+  },
+  "unpack_archive": {
+    "raises": [
+      "ReadError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "which": {
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

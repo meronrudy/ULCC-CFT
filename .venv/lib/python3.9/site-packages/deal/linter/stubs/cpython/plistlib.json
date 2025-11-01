@@ -1,0 +1,155 @@
+{
+  "Data.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "UID.__init__": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_BinaryPlistParser._read_ints": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "_BinaryPlistParser._read_object": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "_BinaryPlistParser.parse": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "_BinaryPlistWriter._flatten": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_BinaryPlistWriter._write_object": {
+    "raises": [
+      "OverflowError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_DumbXMLWriter.end_element": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_DumbXMLWriter.simple_element": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_PlistParser.add_object": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_PlistParser.end_dict": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_PlistParser.end_key": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_PlistParser.handle_entity_decl": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "_PlistWriter.write_dict": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_PlistWriter.write_value": {
+    "raises": [
+      "OverflowError",
+      "TypeError"
+    ]
+  },
+  "_escape": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_maybe_open": {
+    "has": [
+      "read"
+    ]
+  },
+  "dump": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "dumps": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "load": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "loads": {
+    "raises": [
+      "InvalidFileException"
+    ]
+  },
+  "readPlist": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "InvalidFileException",
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "readPlistFromBytes": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "InvalidFileException",
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "writePlist": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "writePlistToBytes": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "WeakKeyDictionary.__deepcopy__": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "Error"
+    ]
+  },
+  "WeakMethod.__new__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "WeakValueDictionary.__deepcopy__": {
+    "has": [
+      "import"
+    ]
+  },
+  "WeakValueDictionary.__getitem__": {
+    "raises": [
+      "KeyError"
+    ]
+  },
+  "WeakValueDictionary.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "WeakValueDictionary.pop": {
+    "raises": [
+      "KeyError"
+    ]
+  },
+  "WeakValueDictionary.update": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "finalize.__init__": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

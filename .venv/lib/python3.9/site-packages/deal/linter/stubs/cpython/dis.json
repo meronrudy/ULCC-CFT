@@ -1,0 +1,75 @@
+{
+  "Bytecode.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Bytecode.dis": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_disassemble_bytes": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_disassemble_recursive": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_disassemble_str": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_get_code_object": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_test": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "code_info": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "dis": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError"
+    ]
+  },
+  "disassemble": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "distb": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "get_instructions": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "show_code": {
+    "has": [
+      "stdout"
+    ]
+  }
+}

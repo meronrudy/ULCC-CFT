@@ -1,0 +1,44 @@
+{
+  "Formatter._vformat": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Formatter.convert_field": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Formatter.format": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Template.__init_subclass__": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Template._invalid": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Template.safe_substitute": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Template.substitute": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_TemplateMetaclass.__init__": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  }
+}

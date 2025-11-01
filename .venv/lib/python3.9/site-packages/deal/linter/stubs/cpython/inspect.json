@@ -1,0 +1,241 @@
+{
+  "BlockFinder.tokeneater": {
+    "raises": [
+      "EndOfBlock"
+    ]
+  },
+  "Parameter.__init__": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Signature.__init__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Signature._bind": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Signature.from_builtin": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "Signature.from_callable": {
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Signature.from_function": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_ClassFinder.visit_ClassDef": {
+    "raises": [
+      "ClassFoundException"
+    ]
+  },
+  "_getfullargs": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_main": {
+    "has": [
+      "import",
+      "stderr",
+      "stdout"
+    ],
+    "raises": [
+      "SystemExit"
+    ]
+  },
+  "_missing_arguments": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_signature_bound_method": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_signature_from_builtin": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_signature_from_callable": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_signature_from_function": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_signature_fromstr": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "ValueError"
+    ]
+  },
+  "_signature_get_bound_param": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_signature_get_partial": {
+    "raises": [
+      "AssertionError",
+      "ValueError"
+    ]
+  },
+  "_signature_strip_non_python_syntax": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_too_many": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "findsource": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "AssertionError",
+      "OSError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "formatargspec": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "getabsfile": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getargs": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getargspec": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "getargvalues": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getattr_static": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "getcallargs": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getclosurevars": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getfile": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getframeinfo": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getfullargspec": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getgeneratorlocals": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getmodulename": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getsourcefile": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getsourcelines": {
+    "raises": [
+      "OSError"
+    ]
+  }
+}

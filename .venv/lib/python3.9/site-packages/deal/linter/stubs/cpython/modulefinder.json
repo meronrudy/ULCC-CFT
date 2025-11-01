@@ -1,0 +1,104 @@
+{
+  "ModuleFinder._safe_import_hook": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.determine_parent": {
+    "raises": [
+      "AssertionError",
+      "ImportError"
+    ]
+  },
+  "ModuleFinder.ensure_fromlist": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "ModuleFinder.find_all_submodules": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.find_head_package": {
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "ModuleFinder.find_module": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "ImportError",
+      "RuntimeError",
+      "TypeError"
+    ]
+  },
+  "ModuleFinder.import_hook": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.load_file": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "ModuleFinder.msg": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.msgin": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.msgout": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.replace_paths_in_code": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "ModuleFinder.report": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ModuleFinder.run_script": {
+    "has": [
+      "read",
+      "stdout"
+    ]
+  },
+  "ModuleFinder.scan_code": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_find_module": {
+    "raises": [
+      "ImportError"
+    ]
+  },
+  "test": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

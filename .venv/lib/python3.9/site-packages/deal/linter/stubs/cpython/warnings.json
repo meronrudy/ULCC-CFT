@@ -1,0 +1,99 @@
+{
+  "_add_filter": {
+    "has": [
+      "global"
+    ]
+  },
+  "_getaction": {
+    "raises": [
+      "_OptionError"
+    ]
+  },
+  "_getcategory": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "_OptionError"
+    ]
+  },
+  "_processoptions": {
+    "has": [
+      "stderr",
+      "stdout"
+    ]
+  },
+  "_setoption": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "_OptionError"
+    ]
+  },
+  "_showwarnmsg": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_warn_unawaited_coroutine": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "catch_warnings.__enter__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "catch_warnings.__exit__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "filterwarnings": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "resetwarnings": {
+    "has": [
+      "global"
+    ]
+  },
+  "simplefilter": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "warn": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "warn_explicit": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  }
+}

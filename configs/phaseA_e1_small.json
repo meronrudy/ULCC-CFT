@@ -1,0 +1,81 @@
+{
+  "scenario_id": "phaseA_e1_small",
+  "rng_seed": 0,
+  "topology": { "N": 8 },
+
+  "scheduler": {
+    "quantum": 8,
+    "default_tile": 0,
+    "affinities_hint": "simple round-robin over specified tiles" 
+  },
+
+  "consumers": [
+    { "tile": [1, 0], "service_rate_flits_per_cycle": 32.0, "sink_latency_cycles": 0 },
+    { "tile": [2, 0], "service_rate_flits_per_cycle": 32.0, "sink_latency_cycles": 0 }
+  ],
+
+  "tasks": [
+    {
+      "task_id": 1,
+      "priority": 5,
+      "affinity": [ [0, 0] ],
+      "dst": [1, 0],
+      "vc": "MAIN",
+      "message_size_flits": 4,
+      "rate_tokens_per_cycle": 1.0,
+      "burst_size_flits": 16,
+      "enable": true
+    },
+    {
+      "task_id": 2,
+      "priority": 5,
+      "affinity": [ [1, 1] ],
+      "dst": [2, 0],
+      "vc": "MAIN",
+      "message_size_flits": 4,
+      "rate_tokens_per_cycle": 1.0,
+      "burst_size_flits": 16,
+      "enable": true
+    }
+  ],
+
+  "mc": {
+    "tile": [7, 7],
+    "bank_count": 8,
+    "channel_count": 2,
+    "rows_per_bank": 64,
+    "window_size": 8,
+    "t_row_hit": 40,
+    "t_row_miss": 200,
+    "t_bus": 20,
+    "mode": "FRFCFS"
+  },
+
+  "cache_miss": [
+    {
+      "tile": [3, 3],
+      "mpki": 2.0,
+      "ipc": 1.0,
+      "message_size_flits": 4,
+      "vc": "MAIN",
+      "mc_tile": [7, 7],
+      "enable": true
+    }
+  ],
+
+  "power": {
+    "e_flit_main": 0.01,
+    "e_flit_esc": 0.01,
+    "e_router_xbar": 0.02,
+    "e_core_issue": 0.005,
+    "sampling_window_cycles": 1
+  },
+
+  "thermal": {
+    "r_th": 1000.0,
+    "c_th": 10000.0,
+    "t_amb": 25.0,
+    "t_init": 25.0,
+    "t_max": 90.0
+  }
+}

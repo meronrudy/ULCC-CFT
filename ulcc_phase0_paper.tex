@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+
+\title{Universal Law of Curved Computation (ULCC) and PGGS:\\
+A Minimal Constructive Specification and Reproducible Phase-0 Implementation}
+\author{Anonymous}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a unified geometric framework in which computation evolves on a curved statistical manifold whose geometry co-evolves with information. The Universal Law of Curved Computation (ULCC) couples the manifold’s curvature to an information-structure tensor $\mathcal{I}_{\mu\nu}$, yielding a background-independent dynamics. A Lagrangian formulation on the Fisher metric produces a second-order equation of motion; Natural Gradient Descent appears as the overdamped limit. We decompose $\mathcal{I}_{\mu\nu}$ into probabilistic, causal-asymmetry, and structural components, each with unit-consistent tensor forms. For global credit assignment in concurrent systems, we introduce Perturbation-Guided Geometric Shapley (PGGS): a guided path-integral attribution on noncommutative hypergraphs, with the ULCC Lagrangian as action and a learned causal atlas for importance sampling. We provide a discrete differential geometry implementation that preserves metric, transport, and holonomy, and report toy experiments on Bernoulli/Gaussian manifolds and causal toy systems, showing invariance, stability, and reduced attribution variance.
+\end{abstract}
+
+\section{Introduction}
+The dominant paradigm fixes a background parameter space and applies first-order optimization. We instead treat learning and attribution as motion on a curved information manifold whose geometry is sourced by information itself. This yields a background-independent account that unifies second-order dynamics with natural gradient methods and provides a principled action for global attribution.
+
+\paragraph{Contributions.} (i) A constructive ULCC in Lagrangian form; (ii) an information-structure tensor $\mathcal{I}_{\mu\nu}$ decomposed into intrinsic, causal, and structural sources; (iii) a DDG scaffold that preserves metric/transport/holonomy in discrete settings; (iv) PGGS, a guided path-integral on noncommutative hypergraphs; (v) a Phase-0 artifact with unit tests.
+
+\section{ULCC: Lagrangian Dynamics on Fisher Geometry}
+Let $\mathcal{M}$ be a statistical manifold with Fisher metric $g_{\mu\nu}$. We posit dynamics for parameters $\theta(t)$ as the Euler–Lagrange equations of
+\begin{equation}
+\mathcal{L}(\theta,\dot{\theta}) = \tfrac{1}{2} g_{\mu\nu}(\theta)\dot{\theta}^\mu\dot{\theta}^\nu - V(\theta),
+\end{equation}
+augmented by isotropic friction $\gamma$ when modeling dissipative learning. In the overdamped regime, the second-order dynamics reduce to natural gradient flow:
+\begin{equation}
+\dot{\theta}^\mu \approx - g^{\mu\nu}(\theta)\,\partial_\nu V(\theta).
+\end{equation}
+For Bernoulli$(\theta)$, $g(\theta)=1/(\theta(1-\theta))$ and $\Gamma^\theta_{\theta\theta} = \frac{2\theta-1}{2\theta(1-\theta)}$.
+
+\section{Information-Structure Tensor}
+We introduce an information source $\mathcal{I}_{\mu\nu} = A_{\mu\nu} + B_{\mu\nu} + C_{\mu\nu}$ with: $A$ intrinsic/probabilistic (data curvature), $B$ causal asymmetry (e.g., IGCI-aligned), and $C$ structural/extrinsic (constraints/embedding). A computational field equation couples curvature to $\mathcal{I}_{\mu\nu}$, informing metric updates or priors in discrete time. Phase-0 demonstrates estimators for $A$ and placeholders for $B,C$.
+
+\section{Discrete Differential Geometry (DDG)}
+We adopt a metric-graph model with parallel transport that reduces to identity at Phase-0, enabling zero-holonomy sanity tests. Future phases add discrete connections via Levi–Civita-compatible transport with convergence checks to smooth limits.
+
+\section{PGGS: Guided Path-Integral Attribution}
+We model concurrent, noncommutative interactions on a hypergraph. Paths are weighted by an action aligned with ULCC; a causal atlas provides importance weights. Phase-0 includes a sampler with monotone guidance and tests ensuring normalization and monotonicity of edge selection.
+
+\section{Experiments}
+Bernoulli invariance tests confirm $\phi=\arcsin(2\theta\!-\!1)$ linearizes geodesics. Overdamped second-order dynamics numerically approach natural gradient updates. DDG identity transport yields zero holonomy on simple loops. PGGS toy sampling reduces variance qualitatively by concentrating mass on high-score edges.
+
+\section{Related Work}
+Information geometry and natural gradients provide the metric foundation; second-order inertial views connect to Riemannian mechanics. Attribution methods such as Shapley lack geometric coupling. Our approach supplies a unified action and a background-independent geometry.
+
+\section{Conclusion}
+ULCC and PGGS provide a compact physical lens on learning and attribution. The Phase-0 artifact establishes a reproducible baseline for subsequent DDG and systems-scale studies.
+
+\\
+\noindent\textbf{Artifact:} code and tests accompany this paper; see README for commands.
+
+\bibliographystyle{abbrv}
+\bibliography{dummy}
+\end{document}

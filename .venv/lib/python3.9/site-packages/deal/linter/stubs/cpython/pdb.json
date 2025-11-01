@@ -1,0 +1,115 @@
+{
+  "Pdb._complete_location": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "Pdb._runmodule": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "Pdb._runscript": {
+    "has": [
+      "import",
+      "read"
+    ]
+  },
+  "Pdb._select_frame": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "Pdb.do_break": {
+    "has": [
+      "import"
+    ]
+  },
+  "Pdb.do_run": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "Restart"
+    ]
+  },
+  "Pdb.error": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "Pdb.help_pdb": {
+    "has": [
+      "import"
+    ]
+  },
+  "Pdb.lookupmodule": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Pdb.message": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "Pdb.reset": {
+    "has": [
+      "import"
+    ]
+  },
+  "Pdb.sigint_handler": {
+    "raises": [
+      "KeyboardInterrupt"
+    ]
+  },
+  "find_function": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "getsourcelines": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "AssertionError",
+      "OSError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "help": {
+    "has": [
+      "global",
+      "import",
+      "stdout"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "SystemExit",
+      "TypeError"
+    ]
+  },
+  "pm": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "post_mortem": {
+    "raises": [
+      "ValueError"
+    ]
+  }
+}

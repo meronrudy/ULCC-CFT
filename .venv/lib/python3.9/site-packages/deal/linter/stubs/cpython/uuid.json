@@ -1,0 +1,112 @@
+{
+  "UUID.__init__": {
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "UUID.__setattr__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_arp_getnode": {
+    "has": [
+      "import"
+    ]
+  },
+  "_find_mac_near_keyword": {
+    "has": [
+      "import"
+    ]
+  },
+  "_find_mac_under_heading": {
+    "has": [
+      "import"
+    ]
+  },
+  "_get_command_stdout": {
+    "has": [
+      "import"
+    ]
+  },
+  "_ipconfig_getnode": {
+    "has": [
+      "import"
+    ]
+  },
+  "_load_system_functions": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_netbios_getnode": {
+    "has": [
+      "import"
+    ]
+  },
+  "_popen": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_random_getnode": {
+    "has": [
+      "import"
+    ]
+  },
+  "_unix_getnode": {
+    "has": [
+      "global",
+      "import"
+    ]
+  },
+  "_windll_getnode": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "getnode": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "uuid1": {
+    "has": [
+      "global",
+      "import",
+      "random",
+      "time"
+    ],
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "uuid3": {
+    "has": [
+      "import"
+    ]
+  },
+  "uuid5": {
+    "has": [
+      "import"
+    ]
+  }
+}

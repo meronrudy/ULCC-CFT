@@ -1,0 +1,261 @@
+{
+  "TarFile.__init__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "TarFile._check": {
+    "raises": [
+      "OSError"
+    ]
+  },
+  "TarFile._dbg": {
+    "has": [
+      "stderr",
+      "stdout"
+    ]
+  },
+  "TarFile._extract_member": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "TarFile._find_link_target": {
+    "raises": [
+      "KeyError"
+    ]
+  },
+  "TarFile._getmember": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "TarFile.add": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "TarFile.addfile": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "TarFile.bz2open": {
+    "raises": [
+      "CompressionError",
+      "ReadError",
+      "ValueError"
+    ]
+  },
+  "TarFile.chmod": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.chown": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.extract": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "TarFile.extractall": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  "TarFile.extractfile": {
+    "raises": [
+      "StreamError"
+    ]
+  },
+  "TarFile.getmember": {
+    "raises": [
+      "KeyError"
+    ]
+  },
+  "TarFile.gettarinfo": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "TarFile.gzopen": {
+    "raises": [
+      "CompressionError",
+      "ReadError",
+      "ValueError"
+    ]
+  },
+  "TarFile.list": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "TarFile.makedev": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.makefifo": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.makelink": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.makeunknown": {
+    "has": [
+      "stderr"
+    ]
+  },
+  "TarFile.next": {
+    "raises": [
+      "ReadError"
+    ]
+  },
+  "TarFile.open": {
+    "raises": [
+      "CompressionError",
+      "ReadError",
+      "ValueError"
+    ]
+  },
+  "TarFile.taropen": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "TarFile.utime": {
+    "raises": [
+      "ExtractError"
+    ]
+  },
+  "TarFile.xzopen": {
+    "raises": [
+      "CompressionError",
+      "ReadError",
+      "ValueError"
+    ]
+  },
+  "TarInfo._create_header": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "TarInfo._posix_split_name": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "TarInfo._proc_gnulong": {
+    "raises": [
+      "SubsequentHeaderError"
+    ]
+  },
+  "TarInfo._proc_pax": {
+    "raises": [
+      "SubsequentHeaderError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "TarInfo.create_ustar_header": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "TarInfo.frombuf": {
+    "raises": [
+      "EOFHeaderError",
+      "EmptyHeaderError",
+      "InvalidHeaderError",
+      "TruncatedHeaderError"
+    ]
+  },
+  "TarInfo.tobuf": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_FileInFile.seek": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_Stream._init_read_gz": {
+    "raises": [
+      "CompressionError",
+      "ReadError"
+    ]
+  },
+  "_Stream._init_write_gz": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_Stream.read": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_Stream.seek": {
+    "raises": [
+      "StreamError"
+    ]
+  },
+  "_safe_print": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "filemode": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "itn": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "read",
+      "stderr",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "nti": {
+    "raises": [
+      "InvalidHeaderError"
+    ]
+  }
+}

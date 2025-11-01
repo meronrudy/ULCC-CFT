@@ -1,0 +1,147 @@
+{
+  "LMTP.connect": {
+    "has": [
+      "network",
+      "stderr"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SMTP.__exit__": {
+    "has": [
+      "network"
+    ]
+  },
+  "SMTP.__init__": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "SMTPConnectError"
+    ]
+  },
+  "SMTP._get_socket": {
+    "has": [
+      "network",
+      "stderr"
+    ],
+    "raises": [
+      "ValueError",
+      "err"
+    ]
+  },
+  "SMTP._print_debug": {
+    "has": [
+      "stderr",
+      "stdout"
+    ]
+  },
+  "SMTP.auth": {
+    "raises": [
+      "SMTPAuthenticationError",
+      "TypeError"
+    ]
+  },
+  "SMTP.close": {
+    "has": [
+      "network"
+    ]
+  },
+  "SMTP.connect": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "OSError"
+    ]
+  },
+  "SMTP.data": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "SMTPDataError"
+    ]
+  },
+  "SMTP.ehlo": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "AssertionError",
+      "SMTPServerDisconnected"
+    ]
+  },
+  "SMTP.ehlo_or_helo_if_needed": {
+    "raises": [
+      "SMTPHeloError"
+    ]
+  },
+  "SMTP.getreply": {
+    "has": [
+      "stderr"
+    ]
+  },
+  "SMTP.login": {
+    "raises": [
+      "SMTPException",
+      "SMTPNotSupportedError",
+      "last_exception"
+    ]
+  },
+  "SMTP.mail": {
+    "raises": [
+      "SMTPNotSupportedError"
+    ]
+  },
+  "SMTP.putcmd": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SMTP.quit": {
+    "has": [
+      "network"
+    ]
+  },
+  "SMTP.send": {
+    "has": [
+      "network",
+      "stderr"
+    ],
+    "raises": [
+      "SMTPServerDisconnected"
+    ]
+  },
+  "SMTP.send_message": {
+    "raises": [
+      "Error",
+      "SMTPNotSupportedError",
+      "ValueError"
+    ]
+  },
+  "SMTP.sendmail": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "SMTPDataError",
+      "SMTPRecipientsRefused",
+      "SMTPSenderRefused"
+    ]
+  },
+  "SMTP.starttls": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "SMTPNotSupportedError",
+      "SMTPResponseException",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  }
+}

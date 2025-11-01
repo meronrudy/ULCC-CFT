@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "ULCC Phase-0: Minimal Reproducible Implementation"
+authors:
+  - family-names: "Your-Name"
+    given-names: "Meron"
+date-released: "2025-10-30"
+version: "0.1.0"
+license: "Apache-2.0"
+keywords:
+  - CFT
+  - ULCC
+  - Discrete Differential Geometry
+  - PGGS
+  - spec-first
+  - reproducible artifacts
+preferred-citation:
+  type: software
+  title: "Spec-first CFT+ULCC Reference Implementation"
+  version: "spec-first"
+  date-released: "2025-10-31"
+  authors:
+    - family-names: "Your-Name"
+      given-names: "Meron"
+  notes: "Spec-first CFT+ULCC Reference Implementation artifacts. Includes Makefile targets spec-first-artifacts and spec-first-archive to generate a tarball of test results and example metrics."

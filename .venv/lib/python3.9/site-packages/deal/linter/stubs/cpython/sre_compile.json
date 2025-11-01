@@ -1,0 +1,33 @@
+{
+  "_bytes_to_codes": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_code": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_compile_info": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "compile": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError",
+      "ValueError"
+    ]
+  },
+  "dis": {
+    "has": [
+      "global",
+      "import"
+    ]
+  }
+}

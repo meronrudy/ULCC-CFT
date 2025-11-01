@@ -1,0 +1,41 @@
+{
+  "_ModifiedArgv0.__enter__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_get_code_from_file": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_get_module_details": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_run_module_as_main": {
+    "raises": [
+      "SystemExit"
+    ]
+  },
+  "run_module": {
+    "has": [
+      "import"
+    ]
+  },
+  "run_path": {
+    "has": [
+      "read"
+    ]
+  }
+}

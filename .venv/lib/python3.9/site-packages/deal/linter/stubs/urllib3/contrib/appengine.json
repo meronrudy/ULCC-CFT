@@ -1,0 +1,42 @@
+{
+  "AppEngineManager.__init__": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "AppEnginePlatformError",
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "AppEngineManager._get_absolute_timeout": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "AppEngineManager._get_retries": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "AppEngineManager.urlopen": {
+    "raises": [
+      "AppEnginePlatformError",
+      "MaxRetryError",
+      "ProtocolError",
+      "SSLError",
+      "TimeoutError"
+    ]
+  }
+}

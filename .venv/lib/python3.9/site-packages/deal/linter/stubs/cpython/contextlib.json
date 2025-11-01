@@ -1,0 +1,32 @@
+{
+  "AsyncExitStack.push_async_callback": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_AsyncGeneratorContextManager.__aenter__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_AsyncGeneratorContextManager.__aexit__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_BaseExitStack.callback": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_GeneratorContextManager.__enter__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  },
+  "_GeneratorContextManager.__exit__": {
+    "raises": [
+      "RuntimeError"
+    ]
+  }
+}

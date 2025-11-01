@@ -1,0 +1,23 @@
+{
+  "_main": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_readmodule": {
+    "raises": [
+      "ImportError",
+      "ModuleNotFoundError",
+      "ValueError"
+    ]
+  },
+  "readmodule_ex": {
+    "raises": [
+      "ImportError",
+      "ModuleNotFoundError"
+    ]
+  }
+}

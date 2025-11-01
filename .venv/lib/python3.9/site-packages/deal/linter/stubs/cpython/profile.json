@@ -1,0 +1,66 @@
+{
+  "Profile._calibrate_inner": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "ValueError",
+      "ZeroDivisionError"
+    ]
+  },
+  "Profile.calibrate": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Profile.dump_stats": {
+    "has": [
+      "read"
+    ]
+  },
+  "Profile.print_stats": {
+    "has": [
+      "import"
+    ]
+  },
+  "Profile.run": {
+    "has": [
+      "import"
+    ]
+  },
+  "Profile.runcall": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Profile.simulate_call": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "Profile.trace_dispatch_call": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "Profile.trace_dispatch_mac": {
+    "raises": [
+      "ZeroDivisionError"
+    ]
+  },
+  "Profile.trace_dispatch_return": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "SystemExit",
+      "TypeError"
+    ]
+  }
+}

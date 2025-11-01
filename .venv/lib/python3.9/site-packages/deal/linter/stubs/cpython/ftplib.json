@@ -1,0 +1,155 @@
+{
+  "FTP.__exit__": {
+    "has": [
+      "network"
+    ]
+  },
+  "FTP.abort": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.close": {
+    "has": [
+      "network"
+    ]
+  },
+  "FTP.connect": {
+    "has": [
+      "network",
+      "stdout"
+    ],
+    "raises": [
+      "ValueError",
+      "err"
+    ]
+  },
+  "FTP.getline": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "EOFError",
+      "Error"
+    ]
+  },
+  "FTP.getmultiline": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.getresp": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.getwelcome": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.makepasv": {
+    "has": [
+      "global",
+      "import"
+    ]
+  },
+  "FTP.makeport": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "OSError",
+      "ValueError",
+      "err"
+    ]
+  },
+  "FTP.ntransfercmd": {
+    "has": [
+      "global",
+      "import",
+      "network",
+      "stdout"
+    ],
+    "raises": [
+      "err"
+    ]
+  },
+  "FTP.putcmd": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.putline": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "FTP.quit": {
+    "has": [
+      "network"
+    ]
+  },
+  "FTP.sendcmd": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.voidcmd": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "FTP.voidresp": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "ftpcp": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "error_proto"
+    ]
+  },
+  "parse150": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "parse227": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "print_line": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "test": {
+    "has": [
+      "import",
+      "stderr",
+      "stdout"
+    ],
+    "raises": [
+      "SystemExit"
+    ]
+  }
+}

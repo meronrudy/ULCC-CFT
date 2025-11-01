@@ -1,0 +1,12 @@
+{
+  "Cmd.columnize": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Cmd.complete": {
+    "has": [
+      "import"
+    ]
+  }
+}

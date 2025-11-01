@@ -1,0 +1,231 @@
+{
+  "DebugRunner.report_failure": {
+    "raises": [
+      "DocTestFailure"
+    ]
+  },
+  "DebugRunner.report_unexpected_exception": {
+    "raises": [
+      "UnexpectedException"
+    ]
+  },
+  "DebugRunner.run": {
+    "has": [
+      "import"
+    ]
+  },
+  "DocFileSuite": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "DocFileTest": {
+    "has": [
+      "read"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "DocTest.__init__": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "DocTestFinder._find": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "DocTestFinder._find_lineno": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "DocTestFinder._from_module": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "DocTestFinder.find": {
+    "has": [
+      "global",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "DocTestParser._check_prefix": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "DocTestParser._check_prompt_blank": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "DocTestParser._find_options": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "DocTestRunner.__patched_linecache_getlines": {
+    "has": [
+      "global"
+    ]
+  },
+  "DocTestRunner.__run": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "DocTestRunner.run": {
+    "has": [
+      "import"
+    ]
+  },
+  "DocTestRunner.summarize": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "DocTestSuite": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "OutputChecker.output_difference": {
+    "raises": [
+      "AssertionError",
+      "TypeError"
+    ]
+  },
+  "_ellipsis_match": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "_exception_traceback": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_load_testfile": {
+    "has": [
+      "import",
+      "read"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_module_relative_path": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_normalize_module": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_test": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "debug": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "debug_script": {
+    "has": [
+      "import",
+      "stdout"
+    ]
+  },
+  "debug_src": {
+    "has": [
+      "import",
+      "stdout"
+    ]
+  },
+  "run_docstring_examples": {
+    "has": [
+      "import"
+    ]
+  },
+  "set_unittest_reportflags": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "testfile": {
+    "has": [
+      "global",
+      "import",
+      "read",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "testmod": {
+    "has": [
+      "global",
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "testsource": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  }
+}

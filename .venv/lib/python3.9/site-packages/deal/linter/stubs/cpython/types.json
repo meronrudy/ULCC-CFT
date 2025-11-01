@@ -1,0 +1,45 @@
+{
+  "DynamicClassAttribute.__delete__": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "DynamicClassAttribute.__get__": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "DynamicClassAttribute.__set__": {
+    "raises": [
+      "AttributeError"
+    ]
+  },
+  "_calculate_meta": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "coroutine": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "new_class": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "prepare_class": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "resolve_bases": {
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

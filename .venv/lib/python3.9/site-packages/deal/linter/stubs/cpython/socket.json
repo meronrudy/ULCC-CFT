@@ -1,0 +1,112 @@
+{
+  "SocketIO.__init__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SocketIO.readable": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SocketIO.readinto": {
+    "raises": [
+      "OSError"
+    ]
+  },
+  "SocketIO.seekable": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SocketIO.writable": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SocketIO.write": {
+    "has": [
+      "network"
+    ]
+  },
+  "create_connection": {
+    "has": [
+      "network"
+    ]
+  },
+  "create_server": {
+    "has": [
+      "network"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "getaddrinfo": {
+    "has": [
+      "network"
+    ]
+  },
+  "getfqdn": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket.__exit__": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket.__getstate__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "socket._check_sendfile_params": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "socket._decref_socketios": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket._real_close": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket._sendfile_use_send": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "socket.accept": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket.close": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket.connect": {
+    "has": [
+      "network"
+    ]
+  },
+  "socket.makefile": {
+    "raises": [
+      "AssertionError",
+      "ValueError"
+    ]
+  },
+  "socket.sendfile": {
+    "has": [
+      "network"
+    ]
+  }
+}

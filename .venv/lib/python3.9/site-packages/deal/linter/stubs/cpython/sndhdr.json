@@ -1,0 +1,41 @@
+{
+  "test": {
+    "has": [
+      "import",
+      "stderr"
+    ],
+    "raises": [
+      "SystemExit"
+    ]
+  },
+  "test_aifc": {
+    "has": [
+      "import"
+    ]
+  },
+  "test_wav": {
+    "has": [
+      "import"
+    ]
+  },
+  "testall": {
+    "has": [
+      "import",
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError"
+    ]
+  },
+  "what": {
+    "has": [
+      "read"
+    ]
+  },
+  "whathdr": {
+    "has": [
+      "read"
+    ]
+  }
+}

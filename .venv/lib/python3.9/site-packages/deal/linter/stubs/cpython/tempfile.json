@@ -1,0 +1,98 @@
+{
+  "NamedTemporaryFile": {
+    "raises": [
+      "FileExistsError"
+    ]
+  },
+  "SpooledTemporaryFile.__enter__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "SpooledTemporaryFile.rollover": {
+    "has": [
+      "global"
+    ]
+  },
+  "TemporaryDirectory.__init__": {
+    "raises": [
+      "FileExistsError"
+    ]
+  },
+  "TemporaryDirectory._cleanup": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "_get_candidate_names": {
+    "has": [
+      "global"
+    ]
+  },
+  "_get_default_tempdir": {
+    "raises": [
+      "FileNotFoundError",
+      "TypeError"
+    ]
+  },
+  "_infer_return_type": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_mkstemp_inner": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "FileExistsError",
+      "TypeError"
+    ]
+  },
+  "_sanitize_params": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "gettempdir": {
+    "has": [
+      "global"
+    ]
+  },
+  "gettempdirb": {
+    "has": [
+      "global"
+    ]
+  },
+  "mkdtemp": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "FileExistsError",
+      "TypeError"
+    ]
+  },
+  "mkstemp": {
+    "raises": [
+      "FileExistsError"
+    ]
+  },
+  "mktemp": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "FileExistsError",
+      "TypeError"
+    ]
+  }
+}

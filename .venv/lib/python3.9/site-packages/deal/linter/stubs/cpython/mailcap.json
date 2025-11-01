@@ -1,0 +1,24 @@
+{
+  "readmailcapfile": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "show": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "test": {
+    "has": [
+      "import",
+      "stdout",
+      "syscall"
+    ]
+  }
+}

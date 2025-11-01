@@ -1,0 +1,32 @@
+{
+  "_deepcopy_dict": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "_deepcopy_list": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "_deepcopy_method": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "_reconstruct": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "copy": {
+    "raises": [
+      "Error"
+    ]
+  },
+  "deepcopy": {
+    "raises": [
+      "Error"
+    ]
+  }
+}

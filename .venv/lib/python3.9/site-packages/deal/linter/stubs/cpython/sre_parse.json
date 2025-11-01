@@ -1,0 +1,26 @@
+{
+  "SubPattern.dump": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "_parse_flags": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "fix_flags": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "parse": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError",
+      "ValueError"
+    ]
+  }
+}

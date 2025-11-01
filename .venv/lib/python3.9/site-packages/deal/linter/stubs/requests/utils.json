@@ -1,0 +1,71 @@
+{
+  "check_header_validity": {
+    "raises": [
+      "InvalidHeader"
+    ]
+  },
+  "extract_zipped_paths": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "from_key_val_list": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "get_encodings_from_content": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "get_unicode_from_response": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "guess_filename": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "rewind_body": {
+    "raises": [
+      "UnrewindableBodyError"
+    ]
+  },
+  "super_len": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "to_key_val_list": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "unquote_unreserved": {
+    "raises": [
+      "InvalidURL"
+    ]
+  }
+}

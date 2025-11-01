@@ -1,0 +1,156 @@
+{
+  "Action.__call__": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "ArgumentParser.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "ArgumentParser._check_value": {
+    "raises": [
+      "ArgumentError"
+    ]
+  },
+  "ArgumentParser._get_value": {
+    "raises": [
+      "ArgumentError"
+    ]
+  },
+  "ArgumentParser._match_argument": {
+    "raises": [
+      "ArgumentError"
+    ]
+  },
+  "ArgumentParser.parse_known_intermixed_args": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "FileType.__call__": {
+    "raises": [
+      "ArgumentTypeError",
+      "ValueError"
+    ]
+  },
+  "HelpFormatter.__init__": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "HelpFormatter._dedent": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "HelpFormatter._fill_text": {
+    "has": [
+      "import"
+    ]
+  },
+  "HelpFormatter._format_action": {
+    "has": [
+      "import"
+    ]
+  },
+  "HelpFormatter._format_args": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "HelpFormatter._format_usage": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "HelpFormatter._split_lines": {
+    "has": [
+      "import"
+    ]
+  },
+  "_ActionsContainer.__init__": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_ActionsContainer._add_container_actions": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_ActionsContainer._get_handler": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_ActionsContainer._get_optional_kwargs": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_ActionsContainer._get_positional_kwargs": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "_ActionsContainer._handle_conflict_error": {
+    "raises": [
+      "ArgumentError"
+    ]
+  },
+  "_ActionsContainer.add_argument": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_AppendAction.__call__": {
+    "has": [
+      "import"
+    ]
+  },
+  "_AppendAction.__init__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_AppendConstAction.__call__": {
+    "has": [
+      "import"
+    ]
+  },
+  "_ExtendAction.__call__": {
+    "has": [
+      "import"
+    ]
+  },
+  "_MutuallyExclusiveGroup._add_action": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_StoreAction.__init__": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "_SubParsersAction.__call__": {
+    "raises": [
+      "ArgumentError"
+    ]
+  },
+  "_copy_items": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "Error"
+    ]
+  }
+}

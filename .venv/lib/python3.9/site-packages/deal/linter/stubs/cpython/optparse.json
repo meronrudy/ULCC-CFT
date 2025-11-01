@@ -1,0 +1,173 @@
+{
+  "HelpFormatter.dedent": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "HelpFormatter.format_heading": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "HelpFormatter.format_usage": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "HelpFormatter.set_long_opt_delimiter": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "HelpFormatter.set_short_opt_delimiter": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Option.__init__": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_action": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_callback": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_choice": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_const": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_nargs": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._check_opt_strings": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Option._check_type": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._set_attrs": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option._set_opt_strings": {
+    "raises": [
+      "OptionError"
+    ]
+  },
+  "Option.take_action": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "OptionContainer._check_conflict": {
+    "raises": [
+      "OptionConflictError"
+    ]
+  },
+  "OptionContainer.add_option": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "OptionContainer.remove_option": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "OptionContainer.set_conflict_handler": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "OptionParser._match_long_opt": {
+    "raises": [
+      "AmbiguousOptionError",
+      "BadOptionError"
+    ]
+  },
+  "OptionParser._process_short_opts": {
+    "raises": [
+      "BadOptionError"
+    ]
+  },
+  "OptionParser.add_option_group": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "OptionParser.error": {
+    "has": [
+      "stderr"
+    ]
+  },
+  "OptionParser.exit": {
+    "has": [
+      "stderr"
+    ],
+    "raises": [
+      "SystemExit"
+    ]
+  },
+  "OptionParser.get_prog_name": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "OptionParser.print_usage": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "OptionParser.print_version": {
+    "has": [
+      "stdout"
+    ]
+  },
+  "Values._update": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Values.read_module": {
+    "has": [
+      "import"
+    ]
+  },
+  "_match_abbrev": {
+    "raises": [
+      "AmbiguousOptionError",
+      "BadOptionError"
+    ]
+  },
+  "check_builtin": {
+    "raises": [
+      "OptionValueError"
+    ]
+  },
+  "check_choice": {
+    "raises": [
+      "OptionValueError"
+    ]
+  }
+}

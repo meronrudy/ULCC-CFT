@@ -1,0 +1,121 @@
+{
+  "Random._randbelow": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "ZeroDivisionError",
+      "message"
+    ]
+  },
+  "Random._randbelow_with_getrandbits": {
+    "has": [
+      "random"
+    ]
+  },
+  "Random._randbelow_without_getrandbits": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ZeroDivisionError",
+      "message"
+    ]
+  },
+  "Random.choice": {
+    "raises": [
+      "IndexError"
+    ]
+  },
+  "Random.choices": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Random.gammavariate": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Random.randrange": {
+    "has": [
+      "random"
+    ],
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Random.sample": {
+    "has": [
+      "import",
+      "random"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "ValueError",
+      "message"
+    ]
+  },
+  "Random.seed": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "Random.setstate": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "Random.shuffle": {
+    "has": [
+      "import",
+      "random"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "SystemRandom._notimplemented": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "SystemRandom.getrandbits": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_test": {
+    "has": [
+      "import",
+      "stdout",
+      "time"
+    ]
+  },
+  "_test_generator": {
+    "has": [
+      "import",
+      "stdout",
+      "time"
+    ],
+    "raises": [
+      "StatisticsError"
+    ]
+  }
+}

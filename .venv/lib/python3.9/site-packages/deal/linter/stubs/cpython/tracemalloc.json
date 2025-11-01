@@ -1,0 +1,37 @@
+{
+  "BaseFilter._match": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "Snapshot._group_by": {
+    "raises": [
+      "ValueError"
+    ]
+  },
+  "Snapshot.dump": {
+    "has": [
+      "read"
+    ]
+  },
+  "Snapshot.filter_traces": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Snapshot.load": {
+    "has": [
+      "read"
+    ]
+  },
+  "_normalize_filename": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "take_snapshot": {
+    "raises": [
+      "RuntimeError"
+    ]
+  }
+}

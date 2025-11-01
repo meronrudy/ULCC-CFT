@@ -1,0 +1,22 @@
+{
+  "Completer.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Completer.attr_matches": {
+    "has": [
+      "import"
+    ]
+  },
+  "Completer.complete": {
+    "has": [
+      "import"
+    ]
+  },
+  "Completer.global_matches": {
+    "has": [
+      "import"
+    ]
+  }
+}

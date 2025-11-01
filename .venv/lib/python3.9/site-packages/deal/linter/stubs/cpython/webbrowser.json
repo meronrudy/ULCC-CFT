@@ -1,0 +1,110 @@
+{
+  "BaseBrowser.open": {
+    "raises": [
+      "NotImplementedError"
+    ]
+  },
+  "GenericBrowser.__init__": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "Grail._find_grail_rc": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError"
+    ]
+  },
+  "Grail._remote": {
+    "has": [
+      "import",
+      "network"
+    ]
+  },
+  "Grail.open": {
+    "has": [
+      "network"
+    ]
+  },
+  "UnixBrowser._invoke": {
+    "has": [
+      "syscall"
+    ]
+  },
+  "UnixBrowser.open": {
+    "has": [
+      "syscall"
+    ],
+    "raises": [
+      "Error"
+    ]
+  },
+  "_synthesize": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  "get": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "Error",
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "read",
+      "stderr",
+      "stdout"
+    ],
+    "raises": [
+      "SystemExit"
+    ]
+  },
+  "open": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "Error"
+    ]
+  },
+  "open_new": {
+    "has": [
+      "read"
+    ]
+  },
+  "open_new_tab": {
+    "has": [
+      "read"
+    ]
+  },
+  "register": {
+    "has": [
+      "global"
+    ]
+  },
+  "register_standard_browsers": {
+    "has": [
+      "global",
+      "import"
+    ],
+    "raises": [
+      "TypeError"
+    ]
+  }
+}

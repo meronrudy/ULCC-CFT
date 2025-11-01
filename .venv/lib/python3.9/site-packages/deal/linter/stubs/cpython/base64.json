@@ -1,0 +1,137 @@
+{
+  "_bytes_from_decode_data": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "_input_type_check": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "a85decode": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "a85encode": {
+    "has": [
+      "global"
+    ]
+  },
+  "b16decode": {
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "b32decode": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "b32encode": {
+    "has": [
+      "global"
+    ]
+  },
+  "b64decode": {
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "b64encode": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "b85decode": {
+    "has": [
+      "global"
+    ],
+    "raises": [
+      "TypeError",
+      "ValueError"
+    ]
+  },
+  "b85encode": {
+    "has": [
+      "global"
+    ]
+  },
+  "decodebytes": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "decodestring": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "encodebytes": {
+    "raises": [
+      "TypeError"
+    ]
+  },
+  "encodestring": {
+    "has": [
+      "import"
+    ],
+    "raises": [
+      "RuntimeError",
+      "TypeError",
+      "message"
+    ]
+  },
+  "main": {
+    "has": [
+      "import",
+      "read",
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError",
+      "SystemExit"
+    ]
+  },
+  "standard_b64decode": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "standard_b64encode": {
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "test": {
+    "has": [
+      "stdout"
+    ],
+    "raises": [
+      "AssertionError"
+    ]
+  },
+  "urlsafe_b64decode": {
+    "raises": [
+      "AssertionError",
+      "TypeError",
+      "ValueError"
+    ]
+  }
+}
