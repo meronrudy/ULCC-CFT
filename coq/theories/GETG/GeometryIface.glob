@@ -1,0 +1,18 @@
+DIGEST ddee7c6e0ec890a00fa4352864d14e3e
+FULCC.GETG.GeometryIface
+R24:28 Coq.Reals.Reals <> <> lib
+rec 39:44 <> Metric
+proj 51:55 <> gcomp
+R62:65 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R59:61 Coq.Init.Datatypes <> nat ind
+R69:72 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R66:68 Coq.Init.Datatypes <> nat ind
+R73:73 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 90:102 <> metric_update
+R107:112 ULCC.GETG.GeometryIface <> Metric rec
+binder 105:105 <> m:3
+R117:122 ULCC.GETG.GeometryIface <> Metric rec
+R127:127 ULCC.GETG.GeometryIface <> m:3 var
+def 141:158 <> cone_compatibility
+R163:168 ULCC.GETG.GeometryIface <> Metric rec
+R181:184 Coq.Init.Logic <> True ind

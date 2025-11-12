@@ -1,0 +1,53 @@
+\documentclass[12pt]{report}
+\usepackage[]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{coqdoc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file has been automatically generated with the command
+%% coqdoc --latex -d coqdoc theories/ULCC/BackgroundIndependence.v theories/ULCC/Coupling.v theories/ULCC/Estimators.v theories/ULCC/InfoStructure.v theories/ULCC/PGGS_Bridge.v theories/ULCC/RecursiveClosure.v 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\coqlibrary{RecursiveClosure}{Library }{RecursiveClosure}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Reals}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.DCGH} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Hypergraph} \coqdocvar{RicciFlow}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.GETG} \coqdockw{Require} \coqdockw{Import} \coqdocvar{GeometryIface}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.ETETF} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Tensor} \coqdocvar{Conservation}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{W2Pi} (\coqdocvar{\_}:\coqdocvar{EdgeWeights}) : \coqdocvar{ST2} := \coqdocvar{zero2}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{Pi2g} (\coqdocvar{\_}:\coqdocvar{ST2}) : \coqdocvar{Metric} := \{| \coqdocvar{gcomp} := \coqdockw{fun} \coqdocvar{\_} \coqdocvar{\_} \ensuremath{\Rightarrow} 0\%\coqdocvar{R} |\}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{flow\_step} := \coqdocvar{RicciFlow.flow\_step}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{recursive\_closure\_commutes} (\coqdocvar{w}:\coqdocvar{EdgeWeights}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdockw{let} \coqdocvar{w'} := \coqdocvar{flow\_step} \coqdocvar{w} \coqdoctac{in}\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{Pi2g} (\coqdocvar{W2Pi} \coqdocvar{w'}) = \coqdocvar{metric\_update} (\coqdocvar{Pi2g} (\coqdocvar{W2Pi} \coqdocvar{w}))\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\land} \coqdocvar{DiscreteConserved} (\coqdocvar{weights\_to\_tensor} \coqdocvar{w'})\coqdoceol
+\coqdocindent{1.00em}
+\ensuremath{\land} \coqdocvar{cone\_compatibility} (\coqdocvar{Pi2g} (\coqdocvar{W2Pi} \coqdocvar{w'})).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{simpl}. \coqdoctac{split}; [\coqdoctac{reflexivity}|]. \coqdoctac{split}.\coqdoceol
+\coqdocindent{1.00em}
+- \coqdoctac{apply} \coqdocvar{all\_conserved}.\coqdoceol
+\coqdocindent{1.00em}
+- \coqdoctac{exact} \coqdocvar{I}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
+\end{document}

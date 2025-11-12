@@ -1,0 +1,50 @@
+DIGEST 54e1f2f37184dfccee8c05cbb1e54f67
+FULCC.ULCC.Coupling
+R24:28 Coq.Reals.Reals <> <> lib
+R62:67 ULCC.ETETF.Tensor <> <> lib
+R69:80 ULCC.ETETF.Conservation <> <> lib
+rec 173:184 <> HasCurvature
+proj 193:196 <> G_of
+proj 207:218 <> Bianchi_disc
+R200:202 ULCC.ETETF.Tensor <> ST2 rec
+R222:238 ULCC.ETETF.Conservation <> DiscreteConserved def
+R240:243 ULCC.ULCC.Coupling <> G_of:2 meth
+ax 259:263 <> kappa
+R267:267 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 282:288 <> Coupled
+R293:304 ULCC.ULCC.Coupling <> HasCurvature rec
+binder 291:291 <> H:5
+R310:316 ULCC.ETETF.Tensor <> Tensor2 def
+binder 308:308 <> T:6
+binder 338:338 <> i:7
+binder 340:340 <> j:8
+R362:364 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R353:356 ULCC.ETETF.Tensor <> comp proj
+R344:347 ULCC.ULCC.Coupling <> G_of proj
+R349:349 ULCC.ULCC.Coupling <> H:5 var
+R359:359 ULCC.ULCC.Coupling <> i:7 var
+R361:361 ULCC.ULCC.Coupling <> j:8 var
+R370:373 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R386:386 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R365:369 ULCC.ULCC.Coupling <> kappa defax
+R377:380 ULCC.ETETF.Tensor <> comp proj
+R374:374 ULCC.ULCC.Coupling <> T:6 var
+R383:383 ULCC.ULCC.Coupling <> i:7 var
+R385:385 ULCC.ULCC.Coupling <> j:8 var
+prf 398:426 <> coupling_implies_conservation
+R433:444 ULCC.ULCC.Coupling <> HasCurvature rec
+binder 431:431 <> H:9
+R452:458 ULCC.ETETF.Tensor <> Tensor2 def
+binder 450:450 <> T:10
+R469:475 ULCC.ULCC.Coupling <> Coupled def
+R477:477 ULCC.ULCC.Coupling <> H:9 var
+R479:479 ULCC.ULCC.Coupling <> T:10 var
+binder 464:466 <> _HC:11
+R490:506 ULCC.ETETF.Conservation <> DiscreteConserved def
+R509:512 ULCC.ULCC.Coupling <> G_of proj
+R514:514 ULCC.ULCC.Coupling <> H:9 var
+binder 485:487 <> _DB:12
+R522:538 ULCC.ETETF.Conservation <> DiscreteConserved def
+R540:540 ULCC.ULCC.Coupling <> T:10 var
+R558:570 ULCC.ETETF.Conservation <> all_conserved thm
+R558:570 ULCC.ETETF.Conservation <> all_conserved thm

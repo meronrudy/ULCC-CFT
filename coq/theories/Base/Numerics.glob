@@ -1,0 +1,5 @@
+DIGEST 50884aba2f6d826e1d8885ce92f57743
+FULCC.Base.Numerics
+R24:28 Coq.Reals.Reals <> <> lib
+R30:32 Coq.micromega.Lia <> <> lib
+def 66:70 <> Rzero

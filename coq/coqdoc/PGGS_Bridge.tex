@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\usepackage[]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{coqdoc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file has been automatically generated with the command
+%% coqdoc --latex -d coqdoc theories/ULCC/BackgroundIndependence.v theories/ULCC/Coupling.v theories/ULCC/Estimators.v theories/ULCC/InfoStructure.v theories/ULCC/PGGS_Bridge.v theories/ULCC/RecursiveClosure.v 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\coqlibrary{PGGS Bridge}{Library }{PGGS\_Bridge}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Reals}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{List}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Import} \coqdocvar{ListNotations}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.DCGH} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Hypergraph} \coqdocvar{DiscreteDiv} \coqdocvar{RicciFlow}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.ETETF} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Conservation}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.UEG} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Posets}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{PGGS\_Params} := \{ \coqdocvar{eta\_fast} : \coqdocvar{R}; \coqdocvar{eta\_slow} : \coqdocvar{R} \}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{pggs\_update} (\coqdocvar{P}:\coqdocvar{PGGS\_Params}) (\coqdocvar{w}:\coqdocvar{EdgeWeights}) (\coqdocvar{path}:\coqdocvar{Path}) : \coqdocvar{EdgeWeights} := \coqdocvar{w}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{pggs\_preserves\_conservation}\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{P}:\coqdocvar{PGGS\_Params}) (\coqdocvar{w}:\coqdocvar{EdgeWeights}) (\coqdocvar{path}:\coqdocvar{Path}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{DiscreteConserved} (\coqdocvar{weights\_to\_tensor} \coqdocvar{w}) \ensuremath{\rightarrow}\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{DiscreteConserved} (\coqdocvar{weights\_to\_tensor} (\coqdocvar{pggs\_update} \coqdocvar{P} \coqdocvar{w} \coqdocvar{path})).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{intros} \coqdocvar{\_}. \coqdoctac{apply} \coqdocvar{all\_conserved}. \coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{pggs\_equivariant\_under\_poset\_iso}\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{iso}:\coqdocvar{PosetIsomorphism}) (\coqdocvar{P}:\coqdocvar{PGGS\_Params}) (\coqdocvar{w}:\coqdocvar{EdgeWeights}) (\coqdocvar{path}:\coqdocvar{Path}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{apply\_iso} \coqdocvar{iso} (\coqdocvar{pggs\_update} \coqdocvar{P} \coqdocvar{w} \coqdocvar{path}) =\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{pggs\_update} \coqdocvar{P} (\coqdocvar{apply\_iso} \coqdocvar{iso} \coqdocvar{w}) (\coqdocvar{map} (\coqdocvar{iso\_fn} \coqdocvar{iso}) \coqdocvar{path}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{reflexivity}. \coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
+\end{document}

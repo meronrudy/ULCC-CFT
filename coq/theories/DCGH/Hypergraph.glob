@@ -1,0 +1,30 @@
+DIGEST ee01f1a3ddeb3c939cf23acb08be9c7e
+FULCC.DCGH.Hypergraph
+R24:28 Coq.Reals.Reals <> <> lib
+R30:33 Coq.Lists.List <> <> lib
+R87:92 ULCC.UEG.Posets <> <> lib
+R126:131 ULCC.ETETF.Tensor <> <> lib
+def 146:151 <> EdgeId
+R156:158 Coq.Init.Datatypes <> nat ind
+def 172:182 <> EdgeWeights
+R193:196 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R187:192 ULCC.DCGH.Hypergraph <> EdgeId def
+R197:197 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 211:214 <> Path
+R219:222 Coq.Init.Datatypes <> list ind
+R224:229 ULCC.DCGH.Hypergraph <> EdgeId def
+def 244:252 <> apply_iso
+R259:274 ULCC.UEG.Posets <> PosetIsomorphism rec
+binder 255:257 <> iso:1
+R280:290 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 278:278 <> w:2
+R295:305 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 316:316 <> e:3
+R321:321 ULCC.DCGH.Hypergraph <> w:2 var
+R324:330 ULCC.UEG.Posets <> iso_inv proj
+R332:334 ULCC.DCGH.Hypergraph <> iso:1 var
+R336:336 ULCC.DCGH.Hypergraph <> e:3 var
+def 352:368 <> weights_to_tensor
+R373:383 ULCC.DCGH.Hypergraph <> EdgeWeights def
+R388:390 ULCC.ETETF.Tensor <> ST2 rec
+R395:399 ULCC.ETETF.Tensor <> zero2 def

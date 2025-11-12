@@ -1,0 +1,15 @@
+DIGEST d2c178403b36dc2b8315dbeb22f8a103
+FULCC.UCR.Diagnostics
+R24:28 Coq.Reals.Reals <> <> lib
+rec 39:55 <> DiagnosticsWindow
+proj 62:70 <> diag_unit
+R74:77 Coq.Init.Datatypes <> unit ind
+def 93:104 <> passes_sigma
+R109:125 ULCC.UCR.Diagnostics <> DiagnosticsWindow rec
+R131:134 Coq.Init.Logic <> True ind
+def 148:164 <> passes_divergence
+R169:185 ULCC.UCR.Diagnostics <> DiagnosticsWindow rec
+R191:194 Coq.Init.Logic <> True ind
+def 208:223 <> model_consistent
+R228:244 ULCC.UCR.Diagnostics <> DiagnosticsWindow rec
+R250:253 Coq.Init.Logic <> True ind

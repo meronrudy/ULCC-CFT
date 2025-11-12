@@ -1,0 +1,67 @@
+DIGEST fdce7b85fd34418465044554ad52c678
+FULCC.ULCC.PGGS_Bridge
+R24:28 Coq.Reals.Reals <> <> lib
+R55:58 Coq.Lists.List <> <> lib
+R113:122 ULCC.DCGH.Hypergraph <> <> lib
+R124:134 ULCC.DCGH.DiscreteDiv <> <> lib
+R136:144 ULCC.DCGH.RicciFlow <> <> lib
+R178:189 ULCC.ETETF.Conservation <> <> lib
+R221:226 ULCC.UEG.Posets <> <> lib
+rec 237:247 <> PGGS_Params
+proj 254:261 <> eta_fast
+proj 268:275 <> eta_slow
+R265:265 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R279:279 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 296:306 <> pggs_update
+R311:321 ULCC.ULCC.PGGS_Bridge <> PGGS_Params rec
+binder 309:309 <> P:4
+R327:337 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 325:325 <> w:5
+R346:349 ULCC.DCGH.Hypergraph <> Path def
+binder 341:344 <> path:6
+R354:364 ULCC.DCGH.Hypergraph <> EdgeWeights def
+R369:369 ULCC.ULCC.PGGS_Bridge <> w:5 var
+prf 381:407 <> pggs_preserves_conservation
+R414:424 ULCC.ULCC.PGGS_Bridge <> PGGS_Params rec
+binder 412:412 <> P:7
+R430:440 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 428:428 <> w:8
+R449:452 ULCC.DCGH.Hypergraph <> Path def
+binder 444:447 <> path:9
+R498:503 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R459:475 ULCC.ETETF.Conservation <> DiscreteConserved def
+R478:494 ULCC.DCGH.Hypergraph <> weights_to_tensor def
+R496:496 ULCC.ULCC.PGGS_Bridge <> w:8 var
+R504:520 ULCC.ETETF.Conservation <> DiscreteConserved def
+R523:539 ULCC.DCGH.Hypergraph <> weights_to_tensor def
+R542:552 ULCC.ULCC.PGGS_Bridge <> pggs_update def
+R554:554 ULCC.ULCC.PGGS_Bridge <> P:7 var
+R556:556 ULCC.ULCC.PGGS_Bridge <> w:8 var
+R558:561 ULCC.ULCC.PGGS_Bridge <> path:9 var
+R589:601 ULCC.ETETF.Conservation <> all_conserved thm
+R589:601 ULCC.ETETF.Conservation <> all_conserved thm
+prf 618:649 <> pggs_equivariant_under_poset_iso
+R658:673 ULCC.UEG.Posets <> PosetIsomorphism rec
+binder 654:656 <> iso:10
+R679:689 ULCC.ULCC.PGGS_Bridge <> PGGS_Params rec
+binder 677:677 <> P:11
+R695:705 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 693:693 <> w:12
+R714:717 ULCC.DCGH.Hypergraph <> Path def
+binder 709:712 <> path:13
+R760:764 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R724:732 ULCC.DCGH.Hypergraph <> apply_iso def
+R734:736 ULCC.ULCC.PGGS_Bridge <> iso:10 var
+R739:749 ULCC.ULCC.PGGS_Bridge <> pggs_update def
+R751:751 ULCC.ULCC.PGGS_Bridge <> P:11 var
+R753:753 ULCC.ULCC.PGGS_Bridge <> w:12 var
+R755:758 ULCC.ULCC.PGGS_Bridge <> path:13 var
+R765:775 ULCC.ULCC.PGGS_Bridge <> pggs_update def
+R777:777 ULCC.ULCC.PGGS_Bridge <> P:11 var
+R780:788 ULCC.DCGH.Hypergraph <> apply_iso def
+R790:792 ULCC.ULCC.PGGS_Bridge <> iso:10 var
+R794:794 ULCC.ULCC.PGGS_Bridge <> w:12 var
+R798:800 Coq.Lists.List <> map def
+R815:818 ULCC.ULCC.PGGS_Bridge <> path:13 var
+R803:808 ULCC.UEG.Posets <> iso_fn proj
+R810:812 ULCC.ULCC.PGGS_Bridge <> iso:10 var

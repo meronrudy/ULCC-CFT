@@ -1,7 +1,7 @@
 # Universal Law of Curved Computation (ULCC) and Computational Field Theory (CFT)
 A Minimal, Reproducible Reference Implementation with PGGS and Discrete Differential Geometry
 
-![E4 Morphogenesis Overview](docs/images/e4_overview.PNG)
+![E4 Morphogenesis Overview](docs/images/e4_overview.png)
 
 Abstract
 This repository presents a compact, testable reference for the Universal Law of Curved Computation (ULCC) and its operationalization via Computational Field Theory (CFT). We instantiate a small but complete stack: (i) smooth information geometry over probabilistic models (Fisher metric, Christoffel symbols, natural-gradient dynamics), (ii) a discrete differential geometry (DDG) scaffold for transport and holonomy on metric graphs, (iii) a toy noncommutative hypergraph sampler (PGGS), and (iv) an E4 “morphogenesis” integration harness implementing a deterministic control protocol with telemetry, guardrails, packing, and report generation. The implementation is CPU-only, deterministic, and fully regression-tested; all components are built to be readable, modifiable, and pedagogically useful for researchers. While the scope targets Bernoulli/Gaussian exemplars and graph-based DDG stubs, the architecture admits natural extension to richer models, manifolds, and pipelines.

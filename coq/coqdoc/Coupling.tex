@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\usepackage[]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{coqdoc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file has been automatically generated with the command
+%% coqdoc --latex -d coqdoc theories/ULCC/BackgroundIndependence.v theories/ULCC/Coupling.v theories/ULCC/Estimators.v theories/ULCC/InfoStructure.v theories/ULCC/PGGS_Bridge.v theories/ULCC/RecursiveClosure.v 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\coqlibrary{Coupling}{Library }{Coupling}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Reals}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.ETETF} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Tensor} \coqdocvar{Conservation}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{HasCurvature} := \{\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{G\_of} : \coqdocvar{ST2};\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{Bianchi\_disc} : \coqdocvar{DiscreteConserved} \coqdocvar{G\_of}\coqdoceol
+\coqdocnoindent
+\}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Parameter} \coqdocvar{kappa} : \coqdocvar{R}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{Coupled} (\coqdocvar{H}:\coqdocvar{HasCurvature}) (\coqdocvar{T}:\coqdocvar{Tensor2}) : \coqdockw{Prop} :=\coqdoceol
+\coqdocindent{1.00em}
+\coqdockw{\ensuremath{\forall}} \coqdocvar{i} \coqdocvar{j}, (\coqdocvar{G\_of} \coqdocvar{H}).(\coqdocvar{comp}) \coqdocvar{i} \coqdocvar{j} = \coqdocvar{kappa} \ensuremath{\times} (\coqdocvar{T}.(\coqdocvar{comp}) \coqdocvar{i} \coqdocvar{j}).\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{coupling\_implies\_conservation}\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{H}:\coqdocvar{HasCurvature})\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{T}:\coqdocvar{Tensor2})\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{\_HC}: \coqdocvar{Coupled} \coqdocvar{H} \coqdocvar{T})\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{\_DB}: \coqdocvar{DiscreteConserved} (\coqdocvar{G\_of} \coqdocvar{H}))\coqdoceol
+\coqdocindent{1.00em}
+: \coqdocvar{DiscreteConserved} \coqdocvar{T}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{apply} \coqdocvar{all\_conserved}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
+\end{document}

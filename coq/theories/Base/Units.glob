@@ -1,0 +1,69 @@
+DIGEST 6926a9c6745bdc7163b2f5754f309896
+FULCC.Base.Units
+R24:27 Coq.Bool.Bool <> <> lib
+R29:34 Coq.ZArith.ZArith <> <> lib
+R36:40 Coq.Reals.Reals <> <> lib
+rec 91:93 <> Dim
+proj 107:107 <> L
+proj 115:115 <> M
+proj 123:124 <> Tm
+R111:111 Coq.Numbers.BinNums <> Z ind
+R119:119 Coq.Numbers.BinNums <> Z ind
+R128:128 Coq.Numbers.BinNums <> Z ind
+def 145:151 <> Dimless
+R155:157 ULCC.Base.Units <> Dim rec
+R167:167 ULCC.Base.Units <> L proj
+R167:167 ULCC.Base.Units <> L proj
+R178:178 ULCC.Base.Units <> M proj
+R189:190 ULCC.Base.Units <> Tm proj
+def 215:220 <> dim_eq
+R231:233 ULCC.Base.Units <> Dim rec
+binder 223:224 <> d1:5
+binder 226:227 <> d2:6
+R238:241 Coq.Init.Datatypes <> bool ind
+R248:251 Coq.Init.Datatypes <> andb def
+R283:286 Coq.Init.Datatypes <> andb def
+R311:315 Coq.ZArith.BinInt Z eqb def
+R318:319 ULCC.Base.Units <> Tm proj
+R321:322 ULCC.Base.Units <> d1:5 var
+R326:327 ULCC.Base.Units <> Tm proj
+R329:330 ULCC.Base.Units <> d2:6 var
+R289:293 Coq.ZArith.BinInt Z eqb def
+R296:296 ULCC.Base.Units <> M proj
+R298:299 ULCC.Base.Units <> d1:5 var
+R303:303 ULCC.Base.Units <> M proj
+R305:306 ULCC.Base.Units <> d2:6 var
+R254:258 Coq.ZArith.BinInt Z eqb def
+R261:261 ULCC.Base.Units <> L proj
+R263:264 ULCC.Base.Units <> d1:5 var
+R268:268 ULCC.Base.Units <> L proj
+R270:271 ULCC.Base.Units <> d2:6 var
+rec 344:344 <> Q
+proj 358:360 <> dim
+proj 370:372 <> val
+R364:366 ULCC.Base.Units <> Dim rec
+R376:376 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 393:402 <> is_dimless
+R407:407 ULCC.Base.Units <> Q rec
+binder 405:405 <> x:10
+R412:415 Coq.Init.Datatypes <> bool ind
+R422:427 ULCC.Base.Units <> dim_eq def
+R430:432 ULCC.Base.Units <> dim proj
+R434:434 ULCC.Base.Units <> x:10 var
+R437:443 ULCC.Base.Units <> Dimless def
+def 458:461 <> qlog
+R466:466 ULCC.Base.Units <> Q rec
+binder 464:464 <> x:11
+R487:489 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R475:484 ULCC.Base.Units <> is_dimless def
+R486:486 ULCC.Base.Units <> x:11 var
+R490:493 Coq.Init.Datatypes <> true constr
+binder 470:471 <> _H:12
+R498:498 ULCC.Base.Units <> Q rec
+R508:510 ULCC.Base.Units <> dim proj
+R508:510 ULCC.Base.Units <> dim proj
+R525:527 ULCC.Base.Units <> val proj
+R515:521 ULCC.Base.Units <> Dimless def
+R532:533 Coq.Reals.Rpower <> ln def
+R536:538 ULCC.Base.Units <> val proj
+R540:540 ULCC.Base.Units <> x:11 var

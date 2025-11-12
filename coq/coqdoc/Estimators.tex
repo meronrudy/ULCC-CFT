@@ -1,0 +1,63 @@
+\documentclass[12pt]{report}
+\usepackage[]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{coqdoc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file has been automatically generated with the command
+%% coqdoc --latex -d coqdoc theories/ULCC/BackgroundIndependence.v theories/ULCC/Coupling.v theories/ULCC/Estimators.v theories/ULCC/InfoStructure.v theories/ULCC/PGGS_Bridge.v theories/ULCC/RecursiveClosure.v 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\coqlibrary{Estimators}{Library }{Estimators}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Reals}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{List}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.ETETF} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Scaling}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.UCR} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Diagnostics}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.GETG} \coqdockw{Require} \coqdockw{Import} \coqdocvar{CurvatureProxies}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{HWTrace} := \{ \coqdocvar{power} : \coqdocvar{list} \coqdocvar{R}; \coqdocvar{rate} : \coqdocvar{list} \coqdocvar{R}; \coqdocvar{latency} : \coqdocvar{list} \coqdocvar{R} \}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{alpha\_hat} (\coqdocvar{\_}:\coqdocvar{HWTrace}) : \coqdocvar{R} := 0\%\coqdocvar{R}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{kappa\_hat} (\coqdocvar{G}:\coqdocvar{Graph}) : \coqdocvar{R} := \coqdocvar{orc\_curvature\_estimator} \coqdocvar{G}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{alpha\_consistent} (\coqdocvar{tr}:\coqdocvar{HWTrace}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{well\_conditioned} \coqdocvar{tr} \ensuremath{\rightarrow} \coqdocvar{is\_consistent} \coqdocvar{alpha\_hat} \coqdocvar{tr}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{intros} \coqdocvar{\_}; \coqdoctac{exact} \coqdocvar{I}. \coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{kappa\_consistent} (\coqdocvar{G}:\coqdocvar{Graph}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{True} \ensuremath{\rightarrow} \coqdocvar{is\_consistent} \coqdocvar{kappa\_hat} \coqdocvar{G}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{intros} \coqdocvar{\_}; \coqdoctac{exact} \coqdocvar{I}. \coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{alpha\_kappa\_monotone} (\coqdocvar{tr}:\coqdocvar{HWTrace}) (\coqdocvar{G}:\coqdocvar{Graph}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{coupling\_regime\_ok} \ensuremath{\rightarrow} \coqdocvar{monotone\_relation} (\coqdocvar{alpha\_hat} \coqdocvar{tr}) (\coqdocvar{kappa\_hat} \coqdocvar{G}).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{intros} \coqdocvar{\_}; \coqdoctac{exact} \coqdocvar{I}. \coqdockw{Qed}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{diagnostics\_sound} (\coqdocvar{d}:\coqdocvar{DiagnosticsWindow}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{passes\_sigma} \coqdocvar{d} \ensuremath{\rightarrow} \coqdocvar{passes\_divergence} \coqdocvar{d} \ensuremath{\rightarrow} \coqdocvar{model\_consistent} \coqdocvar{d}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}. \coqdoctac{intros} \coqdocvar{\_} \coqdocvar{\_}; \coqdoctac{exact} \coqdocvar{I}. \coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
+\end{document}

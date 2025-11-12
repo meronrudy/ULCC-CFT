@@ -1,0 +1,9 @@
+DIGEST 598fd72d07b58750f9d88ea21c3c60d6
+FULCC.GETG.CurvatureProxies
+R24:28 Coq.Reals.Reals <> <> lib
+rec 39:43 <> Graph
+proj 50:59 <> graph_unit
+R63:66 Coq.Init.Datatypes <> unit ind
+def 82:104 <> orc_curvature_estimator
+R109:113 ULCC.GETG.CurvatureProxies <> Graph rec
+R118:118 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax

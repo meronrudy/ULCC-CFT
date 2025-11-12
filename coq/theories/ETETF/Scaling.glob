@@ -1,0 +1,26 @@
+DIGEST 99848d224ad7cd4bd0e21cd9d22f7213
+FULCC.ETETF.Scaling
+R24:28 Coq.Reals.Reals <> <> lib
+R55:58 Coq.Lists.List <> <> lib
+def 95:107 <> regress_slope
+R112:115 Coq.Init.Datatypes <> list ind
+R117:117 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R123:126 Coq.Init.Datatypes <> list ind
+R128:128 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R133:133 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 155:170 <> well_conditioned
+binder 173:173 <> A:1
+R179:179 ULCC.ETETF.Scaling <> A:1 var
+R192:195 Coq.Init.Logic <> True ind
+def 209:221 <> is_consistent
+binder 224:224 <> A:2
+R231:234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R230:230 ULCC.ETETF.Scaling <> A:2 var
+R235:235 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R241:241 ULCC.ETETF.Scaling <> A:2 var
+R254:257 Coq.Init.Logic <> True ind
+def 271:288 <> coupling_regime_ok
+R300:303 Coq.Init.Logic <> True ind
+def 317:333 <> monotone_relation
+R342:342 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R355:358 Coq.Init.Logic <> True ind

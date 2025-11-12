@@ -1,0 +1,7 @@
+DIGEST 7f4a0c8c89b708a71f845b4a571408fc
+FULCC.DCGH.DiscreteDiv
+R24:28 Coq.Reals.Reals <> <> lib
+prf 38:61 <> graph_divergence_theorem
+R65:68 Coq.Init.Logic <> True ind
+R84:84 Coq.Init.Logic <> I constr
+R84:84 Coq.Init.Logic <> I constr

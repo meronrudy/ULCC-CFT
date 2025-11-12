@@ -1,0 +1,9 @@
+DIGEST 924498b628943b64cdd9a844ab180916
+FULCC.DCGH.RicciFlow
+R24:28 Coq.Reals.Reals <> <> lib
+R61:70 ULCC.DCGH.Hypergraph <> <> lib
+def 85:93 <> flow_step
+R98:108 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 96:96 <> w:1
+R113:123 ULCC.DCGH.Hypergraph <> EdgeWeights def
+R128:128 ULCC.DCGH.RicciFlow <> w:1 var

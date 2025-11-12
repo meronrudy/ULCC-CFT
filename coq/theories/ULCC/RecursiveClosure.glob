@@ -1,0 +1,46 @@
+DIGEST 7635f05ece6c471d3ef572481948f6f0
+FULCC.ULCC.RecursiveClosure
+R24:28 Coq.Reals.Reals <> <> lib
+R61:70 ULCC.DCGH.Hypergraph <> <> lib
+R72:80 ULCC.DCGH.RicciFlow <> <> lib
+R113:125 ULCC.GETG.GeometryIface <> <> lib
+R159:164 ULCC.ETETF.Tensor <> <> lib
+R166:177 ULCC.ETETF.Conservation <> <> lib
+def 192:195 <> W2Pi
+R200:210 ULCC.DCGH.Hypergraph <> EdgeWeights def
+R215:217 ULCC.ETETF.Tensor <> ST2 rec
+R222:226 ULCC.ETETF.Tensor <> zero2 def
+def 240:243 <> Pi2g
+R248:250 ULCC.ETETF.Tensor <> ST2 rec
+R255:260 ULCC.GETG.GeometryIface <> Metric rec
+R268:272 ULCC.GETG.GeometryIface <> gcomp proj
+R268:272 ULCC.GETG.GeometryIface <> gcomp proj
+def 307:315 <> flow_step
+R320:338 ULCC.DCGH.RicciFlow <> flow_step def
+prf 350:375 <> recursive_closure_commutes
+R380:390 ULCC.DCGH.Hypergraph <> EdgeWeights def
+binder 378:378 <> w:1
+R407:415 ULCC.ULCC.RecursiveClosure <> flow_step def
+R417:417 ULCC.ULCC.RecursiveClosure <> w:1 var
+binder 401:402 <> w':2
+R470:475 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R438:440 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R424:427 ULCC.ULCC.RecursiveClosure <> Pi2g def
+R430:433 ULCC.ULCC.RecursiveClosure <> W2Pi def
+R435:436 ULCC.ULCC.RecursiveClosure <> w':2 var
+R441:453 ULCC.GETG.GeometryIface <> metric_update def
+R456:459 ULCC.ULCC.RecursiveClosure <> Pi2g def
+R462:465 ULCC.ULCC.RecursiveClosure <> W2Pi def
+R467:467 ULCC.ULCC.RecursiveClosure <> w:1 var
+R516:521 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R476:492 ULCC.ETETF.Conservation <> DiscreteConserved def
+R495:511 ULCC.DCGH.Hypergraph <> weights_to_tensor def
+R513:514 ULCC.ULCC.RecursiveClosure <> w':2 var
+R522:539 ULCC.GETG.GeometryIface <> cone_compatibility def
+R542:545 ULCC.ULCC.RecursiveClosure <> Pi2g def
+R548:551 ULCC.ULCC.RecursiveClosure <> W2Pi def
+R553:554 ULCC.ULCC.RecursiveClosure <> w':2 var
+R615:627 ULCC.ETETF.Conservation <> all_conserved thm
+R615:627 ULCC.ETETF.Conservation <> all_conserved thm
+R640:640 Coq.Init.Logic <> I constr
+R640:640 Coq.Init.Logic <> I constr

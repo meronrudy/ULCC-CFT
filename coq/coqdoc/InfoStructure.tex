@@ -1,0 +1,109 @@
+\documentclass[12pt]{report}
+\usepackage[]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{coqdoc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file has been automatically generated with the command
+%% coqdoc --latex -d coqdoc theories/ULCC/BackgroundIndependence.v theories/ULCC/Coupling.v theories/ULCC/Estimators.v theories/ULCC/InfoStructure.v theories/ULCC/PGGS_Bridge.v theories/ULCC/RecursiveClosure.v 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\coqlibrary{InfoStructure}{Library }{InfoStructure}
+
+\begin{coqdoccode}
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{Coq} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Reals}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.ETETF} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Tensor}.\coqdoceol
+\coqdocnoindent
+\coqdockw{From} \coqdocvar{ULCC.GETG} \coqdockw{Require} \coqdockw{Import} \coqdocvar{Constitutive}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Local Open} \coqdockw{Scope} \coqdocvar{R\_scope}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{InfoTensor} := \{\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{I\_stat}   : \coqdocvar{ST2};  \coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{I\_stoch}  : \coqdocvar{ST2};  \coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{I\_causal} : \coqdocvar{ST2}   \coqdoceol
+\coqdocnoindent
+\}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{ConstitutiveMap} := \{ \coqdocvar{A} : \coqdocvar{R}; \coqdocvar{B} : \coqdocvar{R}; \coqdocvar{C} : \coqdocvar{R} \}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{Pi\_of\_I} (\coqdocvar{CM}:\coqdocvar{ConstitutiveMap}) (\coqdocvar{I}:\coqdocvar{InfoTensor}) : \coqdocvar{ST2}.\coqdoceol
+\coqdocnoindent
+\coqdoctac{refine} \{|\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{comp} := \coqdockw{fun} \coqdocvar{i} \coqdocvar{j} \ensuremath{\Rightarrow}\coqdoceol
+\coqdocindent{6.50em}
+(\coqdocvar{A} \coqdocvar{CM}) \ensuremath{\times} ((\coqdocvar{I\_stat} \coqdocvar{I}).(\coqdocvar{comp}) \coqdocvar{i} \coqdocvar{j})\coqdoceol
+\coqdocindent{5.50em}
++ (\coqdocvar{B} \coqdocvar{CM}) \ensuremath{\times} ((\coqdocvar{I\_stoch} \coqdocvar{I}).(\coqdocvar{comp}) \coqdocvar{i} \coqdocvar{j})\coqdoceol
+\coqdocindent{5.50em}
++ (\coqdocvar{C} \coqdocvar{CM}) \ensuremath{\times} ((\coqdocvar{I\_causal} \coqdocvar{I}).(\coqdocvar{comp}) \coqdocvar{i} \coqdocvar{j});\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{symm} := \coqdocvar{\_}\coqdoceol
+\coqdocnoindent
+|\}.\coqdoceol
+\coqdocnoindent
+\coqdoctac{intros} \coqdocvar{i} \coqdocvar{j}.\coqdoceol
+\coqdocnoindent
+\coqdoctac{rewrite} (\coqdocvar{symm} (\coqdocvar{I\_stat} \coqdocvar{I}) \coqdocvar{i} \coqdocvar{j}).\coqdoceol
+\coqdocnoindent
+\coqdoctac{rewrite} (\coqdocvar{symm} (\coqdocvar{I\_stoch} \coqdocvar{I}) \coqdocvar{i} \coqdocvar{j}).\coqdoceol
+\coqdocnoindent
+\coqdoctac{rewrite} (\coqdocvar{symm} (\coqdocvar{I\_causal} \coqdocvar{I}) \coqdocvar{i} \coqdocvar{j}).\coqdoceol
+\coqdocnoindent
+\coqdoctac{reflexivity}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Defined}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Record} \coqdocvar{Estimators} := \{ \coqdocvar{est\_unit} : \coqdocvar{unit} \}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{estimate\_I} (\coqdocvar{\_}:\coqdocvar{Estimators}) : \coqdocvar{InfoTensor} :=\coqdoceol
+\coqdocindent{1.00em}
+\{| \coqdocvar{I\_stat} := \coqdocvar{zero2}; \coqdocvar{I\_stoch} := \coqdocvar{zero2}; \coqdocvar{I\_causal} := \coqdocvar{zero2} |\}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{estimate\_T} (\coqdocvar{\_}:\coqdocvar{Estimators}) : \coqdocvar{Tensor2} := \coqdocvar{zero2}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Definition} \coqdocvar{with\_error\_bound\_E} (\coqdocvar{\_}:\coqdocvar{Estimators}) : \coqdocvar{with\_error\_bound} \coqdocvar{Estimators} := 0\%\coqdocvar{R}.\coqdoceol
+\coqdocemptyline
+\coqdocnoindent
+\coqdockw{Theorem} \coqdocvar{identifiability\_Pi\_from\_I}\coqdoceol
+\coqdocindent{1.00em}
+(\coqdocvar{E}:\coqdocvar{Estimators}) (\coqdocvar{CM}:\coqdocvar{ConstitutiveMap}) :\coqdoceol
+\coqdocindent{1.00em}
+\coqdocvar{approx\_equal} (\coqdocvar{with\_error\_bound\_E} \coqdocvar{E})\coqdoceol
+\coqdocindent{7.50em}
+(\coqdocvar{Pi\_est} (\coqdocvar{estimate\_T} \coqdocvar{E}))\coqdoceol
+\coqdocindent{7.50em}
+(\coqdocvar{Pi\_of\_I} \coqdocvar{CM} (\coqdocvar{estimate\_I} \coqdocvar{E})).\coqdoceol
+\coqdocnoindent
+\coqdockw{Proof}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{intros} \coqdocvar{i} \coqdocvar{j}; \coqdoctac{simpl}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{repeat} \coqdoctac{rewrite} \coqdocvar{Rmult\_0\_r}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{repeat} \coqdoctac{rewrite} \coqdocvar{Rplus\_0\_l}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{repeat} \coqdoctac{rewrite} \coqdocvar{Rplus\_0\_r}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{rewrite} \coqdocvar{Rminus\_0\_r}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{rewrite} \coqdocvar{Rabs\_R0}.\coqdoceol
+\coqdocindent{1.00em}
+\coqdoctac{apply} \coqdocvar{Rle\_refl}.\coqdoceol
+\coqdocnoindent
+\coqdockw{Qed}.\coqdoceol
+\end{coqdoccode}
+\end{document}

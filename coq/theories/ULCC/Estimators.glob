@@ -1,0 +1,74 @@
+DIGEST 4fb60ad7542aa6686561a1c9a331312d
+FULCC.ULCC.Estimators
+R24:28 Coq.Reals.Reals <> <> lib
+R55:58 Coq.Lists.List <> <> lib
+R92:98 ULCC.ETETF.Scaling <> <> lib
+R130:140 ULCC.UCR.Diagnostics <> <> lib
+R173:188 ULCC.GETG.CurvatureProxies <> <> lib
+rec 199:205 <> HWTrace
+proj 212:216 <> power
+proj 228:231 <> rate
+proj 243:249 <> latency
+R220:223 Coq.Init.Datatypes <> list ind
+R225:225 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R235:238 Coq.Init.Datatypes <> list ind
+R240:240 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R253:256 Coq.Init.Datatypes <> list ind
+R258:258 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 275:283 <> alpha_hat
+R288:294 ULCC.ULCC.Estimators <> HWTrace rec
+R299:299 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 320:328 <> kappa_hat
+R333:337 ULCC.GETG.CurvatureProxies <> Graph rec
+binder 331:331 <> G:5
+R342:342 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R347:369 ULCC.GETG.CurvatureProxies <> orc_curvature_estimator def
+R371:371 ULCC.ULCC.Estimators <> G:5 var
+prf 383:398 <> alpha_consistent
+R404:410 ULCC.ULCC.Estimators <> HWTrace rec
+binder 401:402 <> tr:6
+R436:439 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R417:432 ULCC.ETETF.Scaling <> well_conditioned def
+R434:435 ULCC.ULCC.Estimators <> tr:6 var
+R440:452 ULCC.ETETF.Scaling <> is_consistent def
+R464:465 ULCC.ULCC.Estimators <> tr:6 var
+R454:462 ULCC.ULCC.Estimators <> alpha_hat def
+R491:491 Coq.Init.Logic <> I constr
+R491:491 Coq.Init.Logic <> I constr
+prf 508:523 <> kappa_consistent
+R528:532 ULCC.GETG.CurvatureProxies <> Graph rec
+binder 526:526 <> G:7
+R543:546 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R539:542 Coq.Init.Logic <> True ind
+R547:559 ULCC.ETETF.Scaling <> is_consistent def
+R571:571 ULCC.ULCC.Estimators <> G:7 var
+R561:569 ULCC.ULCC.Estimators <> kappa_hat def
+R597:597 Coq.Init.Logic <> I constr
+R597:597 Coq.Init.Logic <> I constr
+prf 614:633 <> alpha_kappa_monotone
+R639:645 ULCC.ULCC.Estimators <> HWTrace rec
+binder 636:637 <> tr:8
+R651:655 ULCC.GETG.CurvatureProxies <> Graph rec
+binder 649:649 <> G:9
+R680:683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R662:679 ULCC.ETETF.Scaling <> coupling_regime_ok def
+R684:700 ULCC.ETETF.Scaling <> monotone_relation def
+R703:711 ULCC.ULCC.Estimators <> alpha_hat def
+R713:714 ULCC.ULCC.Estimators <> tr:8 var
+R718:726 ULCC.ULCC.Estimators <> kappa_hat def
+R728:728 ULCC.ULCC.Estimators <> G:9 var
+R755:755 Coq.Init.Logic <> I constr
+R755:755 Coq.Init.Logic <> I constr
+prf 772:788 <> diagnostics_sound
+R793:809 ULCC.UCR.Diagnostics <> DiagnosticsWindow rec
+binder 791:791 <> d:10
+R830:833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R816:827 ULCC.UCR.Diagnostics <> passes_sigma def
+R829:829 ULCC.ULCC.Estimators <> d:10 var
+R853:856 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R834:850 ULCC.UCR.Diagnostics <> passes_divergence def
+R852:852 ULCC.ULCC.Estimators <> d:10 var
+R857:872 ULCC.UCR.Diagnostics <> model_consistent def
+R874:874 ULCC.ULCC.Estimators <> d:10 var
+R902:902 Coq.Init.Logic <> I constr
+R902:902 Coq.Init.Logic <> I constr

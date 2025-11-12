@@ -1,0 +1,45 @@
+DIGEST 5f6add698b5f7df0b0463bd5d4313070
+FULCC.ULCC.BackgroundIndependence
+R24:28 Coq.Reals.Reals <> <> lib
+R61:65 ULCC.Base.Units <> <> lib
+R99:104 ULCC.ETETF.Tensor <> <> lib
+R137:149 ULCC.GETG.GeometryIface <> <> lib
+rec 160:163 <> Rule
+proj 170:178 <> rule_eval
+R188:191 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R182:187 ULCC.GETG.GeometryIface <> Metric rec
+R192:194 Coq.Init.Datatypes <> nat ind
+def 211:221 <> scale_units
+R226:226 ULCC.Base.Units <> Q rec
+binder 224:224 <> s:3
+R232:235 ULCC.ULCC.BackgroundIndependence <> Rule rec
+binder 230:230 <> R:4
+R240:243 ULCC.ULCC.BackgroundIndependence <> Rule rec
+R248:248 ULCC.ULCC.BackgroundIndependence <> R:4 var
+def 263:279 <> ETETF_update_rule
+R283:286 ULCC.ULCC.BackgroundIndependence <> Rule rec
+R294:302 ULCC.ULCC.BackgroundIndependence <> rule_eval proj
+R294:302 ULCC.ULCC.BackgroundIndependence <> rule_eval proj
+rec 333:353 <> BackgroundIndependent
+proj 371:390 <> uses_no_fixed_metric
+proj 441:455 <> unit_invariance
+R358:361 ULCC.ULCC.BackgroundIndependence <> Rule rec
+binder 356:356 <> R:5
+binder 401:401 <> g:7
+binder 403:404 <> g':8
+R420:422 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R407:415 ULCC.ULCC.BackgroundIndependence <> rule_eval proj
+R417:417 ULCC.ULCC.BackgroundIndependence <> R:5 var
+R419:419 ULCC.ULCC.BackgroundIndependence <> g:7 var
+R423:431 ULCC.ULCC.BackgroundIndependence <> rule_eval proj
+R433:433 ULCC.ULCC.BackgroundIndependence <> R:5 var
+R435:436 ULCC.ULCC.BackgroundIndependence <> g':8 var
+binder 466:466 <> s:10
+R484:486 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R469:479 ULCC.ULCC.BackgroundIndependence <> scale_units def
+R481:481 ULCC.ULCC.BackgroundIndependence <> s:10 var
+R483:483 ULCC.ULCC.BackgroundIndependence <> R:5 var
+R487:487 ULCC.ULCC.BackgroundIndependence <> R:5 var
+prf 501:534 <> ETETF_rules_background_independent
+R538:558 ULCC.ULCC.BackgroundIndependence <> BackgroundIndependent class
+R560:576 ULCC.ULCC.BackgroundIndependence <> ETETF_update_rule def

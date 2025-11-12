@@ -1,0 +1,38 @@
+DIGEST 251532368591c47a62416800419f666d
+FULCC.UEG.Posets
+R24:27 Coq.Lists.List <> <> lib
+rec 60:75 <> PosetIsomorphism
+proj 84:89 <> iso_fn
+proj 107:113 <> iso_inv
+proj 131:138 <> iso_left
+proj 178:186 <> iso_right
+R96:99 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R93:95 Coq.Init.Datatypes <> nat ind
+R100:102 Coq.Init.Datatypes <> nat ind
+R120:123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R117:119 Coq.Init.Datatypes <> nat ind
+R124:126 Coq.Init.Datatypes <> nat ind
+binder 149:149 <> x:4
+R170:172 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R152:158 ULCC.UEG.Posets <> iso_inv:3 meth
+R161:166 ULCC.UEG.Posets <> iso_fn:2 meth
+R168:168 ULCC.UEG.Posets <> x:4 var
+R173:173 ULCC.UEG.Posets <> x:4 var
+binder 197:197 <> x:6
+R218:220 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R200:205 ULCC.UEG.Posets <> iso_fn:2 meth
+R208:214 ULCC.UEG.Posets <> iso_inv:3 meth
+R216:216 ULCC.UEG.Posets <> x:6 var
+R221:221 ULCC.UEG.Posets <> x:6 var
+def 238:244 <> map_iso
+R251:266 ULCC.UEG.Posets <> PosetIsomorphism rec
+binder 247:249 <> iso:8
+R273:276 Coq.Init.Datatypes <> list ind
+R278:280 Coq.Init.Datatypes <> nat ind
+binder 270:271 <> xs:9
+R285:288 Coq.Init.Datatypes <> list ind
+R290:292 Coq.Init.Datatypes <> nat ind
+R299:301 Coq.Lists.List <> map def
+R316:317 ULCC.UEG.Posets <> xs:9 var
+R308:313 ULCC.UEG.Posets <> iso_fn proj
+R303:305 ULCC.UEG.Posets <> iso:8 var

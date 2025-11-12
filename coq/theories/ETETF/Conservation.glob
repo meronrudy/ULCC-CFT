@@ -1,0 +1,44 @@
+DIGEST e9b9ac5bc5f5c7635f96d6ae4925355f
+FULCC.ETETF.Conservation
+R24:28 Coq.Reals.Reals <> <> lib
+R62:67 ULCC.ETETF.Tensor <> <> lib
+def 151:153 <> Div
+R158:160 ULCC.ETETF.Tensor <> ST2 rec
+binder 156:156 <> T:1
+R166:168 Coq.Init.Datatypes <> nat ind
+binder 164:164 <> k:2
+R173:173 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 194:210 <> DiscreteConserved
+R215:217 ULCC.ETETF.Tensor <> ST2 rec
+binder 213:213 <> T:3
+binder 237:237 <> k:4
+R247:249 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R240:242 ULCC.ETETF.Conservation <> Div def
+R244:244 ULCC.ETETF.Conservation <> T:3 var
+R246:246 ULCC.ETETF.Conservation <> k:4 var
+prf 262:274 <> all_conserved
+R279:281 ULCC.ETETF.Tensor <> ST2 rec
+binder 277:277 <> T:5
+R286:302 ULCC.ETETF.Conservation <> DiscreteConserved def
+R304:304 ULCC.ETETF.Conservation <> T:5 var
+prf 348:356 <> Div_scale
+R361:361 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 359:359 <> a:6
+R367:369 ULCC.ETETF.Tensor <> ST2 rec
+binder 365:365 <> T:7
+binder 381:381 <> k:8
+R402:404 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R384:386 ULCC.ETETF.Conservation <> Div def
+R389:394 ULCC.ETETF.Tensor <> scale2 def
+R396:396 ULCC.ETETF.Conservation <> a:6 var
+R398:398 ULCC.ETETF.Conservation <> T:7 var
+R401:401 ULCC.ETETF.Conservation <> k:8 var
+R406:408 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R405:405 ULCC.ETETF.Conservation <> a:6 var
+R409:411 ULCC.ETETF.Conservation <> Div def
+R413:413 ULCC.ETETF.Conservation <> T:7 var
+R415:415 ULCC.ETETF.Conservation <> k:8 var
+R443:445 ULCC.ETETF.Conservation <> Div def
+R460:468 Coq.Reals.RIneq <> Rmult_0_r thm
+R460:468 Coq.Reals.RIneq <> Rmult_0_r thm
+R460:468 Coq.Reals.RIneq <> Rmult_0_r thm

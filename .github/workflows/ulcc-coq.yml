@@ -1,0 +1,37 @@
+name: ULCC Coq Build
+
+on:
+  push:
+    paths:
+      - 'coq/**'
+      - '.github/workflows/ulcc-coq.yml'
+  pull_request:
+    paths:
+      - 'coq/**'
+      - '.github/workflows/ulcc-coq.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install opam and Coq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y opam m4
+          opam init -y --bare
+          eval $(opam env)
+          opam switch create ulcc-coq ocaml-base-compiler.5.1.1 -y
+          eval $(opam env --switch=ulcc-coq)
+          opam install -y coq.8.17.1 coq-coquelicot coq-mathcomp-ssreflect coq-mathcomp-algebra
+      - name: Build Coq
+        working-directory: coq
+        run: make -j all
+      - name: Coqdoc
+        working-directory: coq
+        run: make coqdoc
+      - name: Archive coqdoc
+        uses: actions/upload-artifact@v4
+        with:
+          name: ulcc-coqdoc
+          path: coq/coqdoc

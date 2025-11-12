@@ -1,0 +1,165 @@
+DIGEST 47e1d24d5a97f95bf4129265daea63f7
+FULCC.ULCC.InfoStructure
+R24:28 Coq.Reals.Reals <> <> lib
+R62:67 ULCC.ETETF.Tensor <> <> lib
+R100:111 ULCC.GETG.Constitutive <> <> lib
+rec 206:215 <> InfoTensor
+proj 224:229 <> I_stat
+proj 290:296 <> I_stoch
+proj 343:350 <> I_causal
+R235:237 ULCC.ETETF.Tensor <> ST2 rec
+R301:303 ULCC.ETETF.Tensor <> ST2 rec
+R354:356 ULCC.ETETF.Tensor <> ST2 rec
+rec 478:492 <> ConstitutiveMap
+proj 499:499 <> A
+proj 506:506 <> B
+proj 513:513 <> C
+R503:503 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R510:510 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R517:517 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 534:540 <> Pi_of_I
+R546:560 ULCC.ULCC.InfoStructure <> ConstitutiveMap rec
+binder 543:544 <> CM:9
+R566:575 ULCC.ULCC.InfoStructure <> InfoTensor rec
+binder 564:564 <> I:10
+R580:582 ULCC.ETETF.Tensor <> ST2 rec
+R597:600 ULCC.ETETF.Tensor <> comp proj
+R597:600 ULCC.ETETF.Tensor <> comp proj
+R760:763 ULCC.ETETF.Tensor <> symm proj
+binder 609:609 <> i:11
+binder 611:611 <> j:12
+R708:721 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R661:674 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R629:629 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R634:638 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R660:660 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R630:630 ULCC.ULCC.InfoStructure <> A proj
+R651:654 ULCC.ETETF.Tensor <> comp proj
+R640:645 ULCC.ULCC.InfoStructure <> I_stat proj
+R657:657 ULCC.ULCC.InfoStructure <> i:11 var
+R659:659 ULCC.ULCC.InfoStructure <> j:12 var
+R675:675 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R680:684 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R707:707 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R676:676 ULCC.ULCC.InfoStructure <> B proj
+R698:701 ULCC.ETETF.Tensor <> comp proj
+R686:692 ULCC.ULCC.InfoStructure <> I_stoch proj
+R704:704 ULCC.ULCC.InfoStructure <> i:11 var
+R706:706 ULCC.ULCC.InfoStructure <> j:12 var
+R722:722 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R727:731 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R755:755 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R723:723 ULCC.ULCC.InfoStructure <> C proj
+R746:749 ULCC.ETETF.Tensor <> comp proj
+R733:740 ULCC.ULCC.InfoStructure <> I_causal proj
+R752:752 ULCC.ULCC.InfoStructure <> i:11 var
+R754:754 ULCC.ULCC.InfoStructure <> j:12 var
+R597:600 ULCC.ETETF.Tensor <> comp proj
+R597:600 ULCC.ETETF.Tensor <> comp proj
+R760:763 ULCC.ETETF.Tensor <> symm proj
+binder 609:609 <> i:13
+binder 611:611 <> j:14
+R708:721 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R661:674 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R629:629 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R634:638 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R660:660 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R630:630 ULCC.ULCC.InfoStructure <> A proj
+R651:654 ULCC.ETETF.Tensor <> comp proj
+R640:645 ULCC.ULCC.InfoStructure <> I_stat proj
+R657:657 ULCC.ULCC.InfoStructure <> i:13 var
+R659:659 ULCC.ULCC.InfoStructure <> j:14 var
+R675:675 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R680:684 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R707:707 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R676:676 ULCC.ULCC.InfoStructure <> B proj
+R698:701 ULCC.ETETF.Tensor <> comp proj
+R686:692 ULCC.ULCC.InfoStructure <> I_stoch proj
+R704:704 ULCC.ULCC.InfoStructure <> i:13 var
+R706:706 ULCC.ULCC.InfoStructure <> j:14 var
+R722:722 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R727:731 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R755:755 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R723:723 ULCC.ULCC.InfoStructure <> C proj
+R746:749 ULCC.ETETF.Tensor <> comp proj
+R733:740 ULCC.ULCC.InfoStructure <> I_causal proj
+R752:752 ULCC.ULCC.InfoStructure <> i:13 var
+R754:754 ULCC.ULCC.InfoStructure <> j:14 var
+R795:798 ULCC.ETETF.Tensor <> symm proj
+R801:806 ULCC.ULCC.InfoStructure <> I_stat proj
+R795:798 ULCC.ETETF.Tensor <> symm proj
+R801:806 ULCC.ULCC.InfoStructure <> I_stat proj
+R795:798 ULCC.ETETF.Tensor <> symm proj
+R801:806 ULCC.ULCC.InfoStructure <> I_stat proj
+R826:829 ULCC.ETETF.Tensor <> symm proj
+R832:838 ULCC.ULCC.InfoStructure <> I_stoch proj
+R826:829 ULCC.ETETF.Tensor <> symm proj
+R832:838 ULCC.ULCC.InfoStructure <> I_stoch proj
+R826:829 ULCC.ETETF.Tensor <> symm proj
+R832:838 ULCC.ULCC.InfoStructure <> I_stoch proj
+R858:861 ULCC.ETETF.Tensor <> symm proj
+R864:871 ULCC.ULCC.InfoStructure <> I_causal proj
+R858:861 ULCC.ETETF.Tensor <> symm proj
+R864:871 ULCC.ULCC.InfoStructure <> I_causal proj
+R858:861 ULCC.ETETF.Tensor <> symm proj
+R864:871 ULCC.ULCC.InfoStructure <> I_causal proj
+rec 987:996 <> Estimators
+proj 1003:1010 <> est_unit
+R1014:1017 Coq.Init.Datatypes <> unit ind
+def 1033:1042 <> estimate_I
+R1047:1056 ULCC.ULCC.InfoStructure <> Estimators rec
+R1061:1070 ULCC.ULCC.InfoStructure <> InfoTensor rec
+R1080:1085 ULCC.ULCC.InfoStructure <> I_stat proj
+R1080:1085 ULCC.ULCC.InfoStructure <> I_stat proj
+R1097:1103 ULCC.ULCC.InfoStructure <> I_stoch proj
+R1115:1122 ULCC.ULCC.InfoStructure <> I_causal proj
+R1090:1094 ULCC.ETETF.Tensor <> zero2 def
+R1108:1112 ULCC.ETETF.Tensor <> zero2 def
+R1127:1131 ULCC.ETETF.Tensor <> zero2 def
+def 1148:1157 <> estimate_T
+R1162:1171 ULCC.ULCC.InfoStructure <> Estimators rec
+R1176:1182 ULCC.ETETF.Tensor <> Tensor2 def
+R1187:1191 ULCC.ETETF.Tensor <> zero2 def
+def 1206:1223 <> with_error_bound_E
+R1228:1237 ULCC.ULCC.InfoStructure <> Estimators rec
+R1242:1257 ULCC.ETETF.Tensor <> with_error_bound def
+R1259:1268 ULCC.ULCC.InfoStructure <> Estimators rec
+prf 1287:1311 <> identifiability_Pi_from_I
+R1318:1327 ULCC.ULCC.InfoStructure <> Estimators rec
+binder 1316:1316 <> E:17
+R1334:1348 ULCC.ULCC.InfoStructure <> ConstitutiveMap rec
+binder 1331:1332 <> CM:18
+R1355:1366 ULCC.ETETF.Tensor <> approx_equal def
+R1369:1386 ULCC.ULCC.InfoStructure <> with_error_bound_E def
+R1388:1388 ULCC.ULCC.InfoStructure <> E:17 var
+R1407:1412 ULCC.ETETF.Tensor <> Pi_est def
+R1415:1424 ULCC.ULCC.InfoStructure <> estimate_T def
+R1426:1426 ULCC.ULCC.InfoStructure <> E:17 var
+R1446:1452 ULCC.ULCC.InfoStructure <> Pi_of_I def
+R1454:1455 ULCC.ULCC.InfoStructure <> CM:18 var
+R1458:1467 ULCC.ULCC.InfoStructure <> estimate_I def
+R1469:1469 ULCC.ULCC.InfoStructure <> E:17 var
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1519:1527 Coq.Reals.RIneq <> Rmult_0_r thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1547:1555 Coq.Reals.Raxioms <> Rplus_0_l thm
+R1575:1583 Coq.Reals.RIneq <> Rplus_0_r thm
+R1575:1583 Coq.Reals.RIneq <> Rplus_0_r thm
+R1596:1605 Coq.Reals.RIneq <> Rminus_0_r thm
+R1596:1605 Coq.Reals.RIneq <> Rminus_0_r thm
+R1596:1605 Coq.Reals.RIneq <> Rminus_0_r thm
+R1618:1624 Coq.Reals.Rbasic_fun <> Rabs_R0 thm
+R1618:1624 Coq.Reals.Rbasic_fun <> Rabs_R0 thm
+R1618:1624 Coq.Reals.Rbasic_fun <> Rabs_R0 thm
+R1635:1642 Coq.Reals.RIneq <> Rle_refl thm
+R1635:1642 Coq.Reals.RIneq <> Rle_refl thm

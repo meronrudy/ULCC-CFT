@@ -1,0 +1,120 @@
+DIGEST d7b380ed7bc370eb1b71e696b921a217
+FULCC.ETETF.Tensor
+R24:28 Coq.Reals.Reals <> <> lib
+rec 65:67 <> ST2
+proj 76:79 <> comp
+proj 103:106 <> symm
+R86:89 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R83:85 Coq.Init.Datatypes <> nat ind
+R93:96 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R90:92 Coq.Init.Datatypes <> nat ind
+R97:97 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 117:117 <> i:3
+binder 119:119 <> j:4
+R130:132 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R122:125 ULCC.ETETF.Tensor <> comp:2 meth
+R129:129 ULCC.ETETF.Tensor <> j:4 var
+R127:127 ULCC.ETETF.Tensor <> i:3 var
+R133:136 ULCC.ETETF.Tensor <> comp:2 meth
+R140:140 ULCC.ETETF.Tensor <> i:3 var
+R138:138 ULCC.ETETF.Tensor <> j:4 var
+def 156:162 <> Tensor2
+R167:169 ULCC.ETETF.Tensor <> ST2 rec
+def 184:188 <> zero2
+R192:194 ULCC.ETETF.Tensor <> ST2 rec
+R207:210 ULCC.ETETF.Tensor <> comp proj
+R207:210 ULCC.ETETF.Tensor <> comp proj
+R241:244 ULCC.ETETF.Tensor <> symm proj
+R207:210 ULCC.ETETF.Tensor <> comp proj
+R207:210 ULCC.ETETF.Tensor <> comp proj
+R241:244 ULCC.ETETF.Tensor <> symm proj
+def 301:304 <> add2
+R311:313 ULCC.ETETF.Tensor <> ST2 rec
+binder 307:307 <> A:6
+binder 309:309 <> B:7
+R318:320 ULCC.ETETF.Tensor <> ST2 rec
+R333:336 ULCC.ETETF.Tensor <> comp proj
+R333:336 ULCC.ETETF.Tensor <> comp proj
+R391:394 ULCC.ETETF.Tensor <> symm proj
+binder 345:345 <> i:8
+binder 347:347 <> j:9
+R364:366 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R355:358 ULCC.ETETF.Tensor <> comp proj
+R361:361 ULCC.ETETF.Tensor <> i:8 var
+R363:363 ULCC.ETETF.Tensor <> j:9 var
+R370:373 ULCC.ETETF.Tensor <> comp proj
+R376:376 ULCC.ETETF.Tensor <> i:8 var
+R378:378 ULCC.ETETF.Tensor <> j:9 var
+R333:336 ULCC.ETETF.Tensor <> comp proj
+R333:336 ULCC.ETETF.Tensor <> comp proj
+R391:394 ULCC.ETETF.Tensor <> symm proj
+binder 345:345 <> i:10
+binder 347:347 <> j:11
+R364:366 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R355:358 ULCC.ETETF.Tensor <> comp proj
+R361:361 ULCC.ETETF.Tensor <> i:10 var
+R363:363 ULCC.ETETF.Tensor <> j:11 var
+R370:373 ULCC.ETETF.Tensor <> comp proj
+R376:376 ULCC.ETETF.Tensor <> i:10 var
+R378:378 ULCC.ETETF.Tensor <> j:11 var
+R426:429 ULCC.ETETF.Tensor <> symm proj
+R426:429 ULCC.ETETF.Tensor <> symm proj
+R426:429 ULCC.ETETF.Tensor <> symm proj
+R448:451 ULCC.ETETF.Tensor <> symm proj
+R448:451 ULCC.ETETF.Tensor <> symm proj
+R448:451 ULCC.ETETF.Tensor <> symm proj
+def 495:500 <> scale2
+R505:505 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 503:503 <> a:12
+R511:513 ULCC.ETETF.Tensor <> ST2 rec
+binder 509:509 <> A:13
+R518:520 ULCC.ETETF.Tensor <> ST2 rec
+R533:536 ULCC.ETETF.Tensor <> comp proj
+R533:536 ULCC.ETETF.Tensor <> comp proj
+R580:583 ULCC.ETETF.Tensor <> symm proj
+binder 545:545 <> i:14
+binder 547:547 <> j:15
+R553:555 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R559:562 ULCC.ETETF.Tensor <> comp proj
+R565:565 ULCC.ETETF.Tensor <> i:14 var
+R567:567 ULCC.ETETF.Tensor <> j:15 var
+R533:536 ULCC.ETETF.Tensor <> comp proj
+R533:536 ULCC.ETETF.Tensor <> comp proj
+R580:583 ULCC.ETETF.Tensor <> symm proj
+binder 545:545 <> i:16
+binder 547:547 <> j:17
+R553:555 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R559:562 ULCC.ETETF.Tensor <> comp proj
+R565:565 ULCC.ETETF.Tensor <> i:16 var
+R567:567 ULCC.ETETF.Tensor <> j:17 var
+R615:618 ULCC.ETETF.Tensor <> symm proj
+R615:618 ULCC.ETETF.Tensor <> symm proj
+R615:618 ULCC.ETETF.Tensor <> symm proj
+def 662:673 <> approx_equal
+R680:680 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 676:678 <> eps:18
+R688:690 ULCC.ETETF.Tensor <> ST2 rec
+binder 684:684 <> A:19
+binder 686:686 <> B:20
+binder 712:712 <> i:21
+binder 714:714 <> j:22
+R751:754 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R717:720 Coq.Reals.Rbasic_fun <> Rabs def
+R735:737 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R726:729 ULCC.ETETF.Tensor <> comp proj
+R723:723 ULCC.ETETF.Tensor <> A:19 var
+R732:732 ULCC.ETETF.Tensor <> i:21 var
+R734:734 ULCC.ETETF.Tensor <> j:22 var
+R741:744 ULCC.ETETF.Tensor <> comp proj
+R738:738 ULCC.ETETF.Tensor <> B:20 var
+R747:747 ULCC.ETETF.Tensor <> i:21 var
+R749:749 ULCC.ETETF.Tensor <> j:22 var
+R755:757 ULCC.ETETF.Tensor <> eps:18 var
+def 772:787 <> with_error_bound
+binder 790:790 <> E:23
+R801:801 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 816:821 <> Pi_est
+R826:832 ULCC.ETETF.Tensor <> Tensor2 def
+binder 824:824 <> T:24
+R837:839 ULCC.ETETF.Tensor <> ST2 rec
+R844:844 ULCC.ETETF.Tensor <> T:24 var
